@@ -1,0 +1,204 @@
+/* Long-form prose, documentation articles, and legal pages */
+
+.page-content--article .article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.page-content--article .article-meta .caption {
+  color: var(--muted);
+}
+
+.page-content--legal h1 {
+  margin-bottom: 12px;
+}
+
+.page-content--legal .legal-updated {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.page-content--legal .legal-intro {
+  font-size: 17px;
+  line-height: 1.55;
+  max-width: 65ch;
+  margin-bottom: 40px;
+  color: var(--muted);
+}
+
+.page-content--legal section h2 {
+  font-size: clamp(20px, 2.5vw, 24px);
+  margin-bottom: 16px;
+  padding-top: 8px;
+}
+
+.page-content--legal section h3 {
+  font-size: 17px;
+  margin: 24px 0 12px;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.page-content--legal ol {
+  list-style: none;
+  counter-reset: legal-counter;
+  margin: 16px 0 24px;
+  max-width: 65ch;
+}
+
+.page-content--legal ol > li {
+  counter-increment: legal-counter;
+  padding: 8px 0 8px 32px;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.page-content--legal ol > li::before {
+  content: counter(legal-counter) '.';
+  position: absolute;
+  left: 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.page-content--legal ul {
+  margin: 12px 0 20px;
+}
+
+.page-content--legal ul li {
+  padding-left: 16px;
+}
+
+.prose-note {
+  margin: 24px 0;
+  padding: 16px 20px;
+  border-radius: var(--radius-sm);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-left: 3px solid var(--blue);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 65ch;
+}
+
+.prose-note strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--fg);
+  font-size: 14px;
+}
+
+.prose-warn {
+  border-left-color: var(--magenta);
+}
+
+.code-block {
+  margin: 20px 0 28px;
+  padding: 20px 24px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--fg);
+  letter-spacing: 0;
+  max-width: 100%;
+}
+
+.code-block code {
+  font-family: inherit;
+  font-size: inherit;
+  white-space: pre;
+  display: block;
+}
+
+.code-block .code-label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.page-content--article .prose-steps {
+  counter-reset: step-counter;
+  list-style: none;
+  margin: 20px 0;
+  max-width: 65ch;
+}
+
+.page-content--article .prose-steps > li {
+  counter-increment: step-counter;
+  padding: 16px 0 16px 40px;
+  position: relative;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.page-content--article .prose-steps > li:last-child {
+  border-bottom: none;
+}
+
+.page-content--article .prose-steps > li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.page-content--article .prose-steps > li::after {
+  display: none;
+}
+
+.page-content--article kbd {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--fg);
+}
+
+.page-content--article .compat-inline {
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 8px 0 16px;
+}
+
+.page-content--article .compat-inline .chip {
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .code-block {
+    padding: 16px;
+    font-size: 12px;
+  }
+}
