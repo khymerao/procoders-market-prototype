@@ -1,0 +1,926 @@
+<!doctype html>
+<html class="pcm-market" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProCoders Market — First-Party WordPress Plugin Store</title>
+  <meta name="description" content="ProCoders Market is ProCoders' first-party software licensing storefront for WordPress plugins. Browse in-house plugins with full GPL source and engineering support.">
+  <link rel="canonical" href="https://market.procoders.tech/">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="ProCoders Market — First-Party WordPress Plugin Store">
+  <meta property="og:description" content="ProCoders Market is ProCoders' first-party software licensing storefront for WordPress plugins. Browse in-house plugins with full GPL source and engineering support.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://market.procoders.tech/">
+  <meta property="og:site_name" content="ProCoders Market">
+  <meta property="og:image" content="https://market.procoders.tech/assets/og/procoders-market.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://market.procoders.tech/assets/og/procoders-market.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ProCoders Market — First-Party WordPress Plugin Store">
+  <meta name="twitter:description" content="ProCoders Market is ProCoders' first-party software licensing storefront for WordPress plugins. Browse in-house plugins with full GPL source and engineering support.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://market.procoders.tech/#organization",
+        "name": "ProCoders Market",
+        "url": "https://market.procoders.tech/",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "ProCoders",
+          "url": "https://procoders.tech/"
+        },
+        "description": "First-party software licensing storefront for WordPress plugins built and supported by ProCoders."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://market.procoders.tech/#website",
+        "url": "https://market.procoders.tech/",
+        "name": "ProCoders Market",
+        "publisher": { "@id": "https://market.procoders.tech/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://market.procoders.tech/wordpress-plugins/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://market.procoders.tech/#webpage",
+        "url": "https://market.procoders.tech/",
+        "name": "ProCoders Market — First-Party WordPress Plugin Store",
+        "description": "ProCoders Market is ProCoders' first-party software licensing storefront for WordPress plugins.",
+        "isPartOf": { "@id": "https://market.procoders.tech/#website" },
+        "about": { "@id": "https://market.procoders.tech/#organization" }
+      }
+    ]
+  }
+  </script>
+  <script>
+  (function(){try{var c=localStorage.getItem('pcm-cookie-consent');document.documentElement.setAttribute('data-cookie-consent',c?'yes':'pending');}catch(e){document.documentElement.setAttribute('data-cookie-consent','pending');}})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pcm-shared.css">
+  <link rel="stylesheet" href="pcm-home.css">
+  <script src="pcm-shared.js" defer></script>
+  <script src="pcm-search.js" defer></script>
+</head>
+<body class="has-cookie-bar" data-auth="guest">
+
+  <!-- 1. Sticky Header -->
+  <header class="header" id="header" data-od-id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <svg class="logo__img" width="120" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ProCoders">
+          <path d="M50.073 16.013h-3.215v2.318h3.215v-2.318ZM49.782 37.682h-3.215V40h3.215v-2.318ZM56.73 19.27l-2.6-1.89-1.365 1.874 2.6 1.891 1.365-1.874ZM43.728 36.767l-2.6-1.89-1.365 1.874 2.6 1.89 1.365-1.874ZM54.883 35.078l-2.622 1.859 1.342 1.89 2.623-1.859-1.343-1.89ZM42.551 17.372l-2.622 1.86 1.342 1.89 2.623-1.86-1.343-1.89ZM37.562 22.5l-1.02 3.047 2.2.736 1.02-3.047-2.2-.736ZM57.653 29.66l-1.02 3.047 2.2.736 1.02-3.047-2.2-.736ZM36.284 29.976l.896 3.086 2.228-.646-.896-3.086-2.228.646ZM56.729 23.527l.896 3.086 2.228-.646-.896-3.086-2.228.646Z" fill="#0096FF"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M58.164 28.021c0 5.47-4.438 9.904-9.912 9.904-5.474 0-9.912-4.434-9.912-9.904s4.438-9.903 9.912-9.903c5.474 0 9.912 4.434 9.912 9.903Zm-9.912 6.015a6.017 6.017 0 0 0 6.02-6.015 6.017 6.017 0 0 0-6.02-6.015 6.017 6.017 0 0 0-6.02 6.015 6.017 6.017 0 0 0 6.02 6.015Z" fill="#0096FF"/>
+          <path d="M48.252 32.895a4.876 4.876 0 0 0 4.878-4.874 4.876 4.876 0 0 0-4.878-4.874 4.876 4.876 0 0 0-4.878 4.874 4.876 4.876 0 0 0 4.878 4.874Z" fill="#0096FF"/>
+          <path d="M42.998.637 40.06 0l-.411 1.89 2.938.638.41-1.89ZM48.207 5.577l-1.774-2.425-1.563 1.142 1.774 2.425 1.563-1.142ZM34.254 15.084 32.48 12.66l-1.563 1.142 1.774 2.425 1.563-1.143ZM34.254 4.141l2.536-1.613L35.75.896l-2.535 1.613 1.04 1.632ZM43.767 18.228l2.47-1.714-1.105-1.589-2.47 1.714 1.105 1.589ZM48.583 12.892l.516-2.96-1.908-.331-.516 2.96 1.908.331ZM31.93 9.678l.515-2.96-1.908-.331-.515 2.959 1.907.332ZM39.56 17.276l-2.938-.637-.41 1.89 2.937.638.411-1.89Z" fill="#66F"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M47.284 9.6c0 4.263-3.458 7.718-7.724 7.718-4.265 0-7.723-3.456-7.723-7.718 0-4.262 3.458-7.717 7.723-7.717 4.266 0 7.724 3.455 7.724 7.717Zm-7.724 4.218A4.219 4.219 0 0 0 43.78 9.6c0-2.329-1.889-4.217-4.22-4.217A4.219 4.219 0 0 0 35.34 9.6c0 2.33 1.89 4.218 4.22 4.218Z" fill="#66F"/>
+          <path d="M5.26 17.172v-5.438h3.904c3.307 0 5.143-2.271 5.143-4.933 0-2.684-1.814-4.933-5.143-4.933H2v15.304h3.26Zm3.468-8.306H5.26v-4.13h3.467c1.286 0 2.25.78 2.25 2.065 0 1.262-.964 2.065-2.25 2.065Zm20 8.306-3.444-5.828c1.653-.39 3.352-1.835 3.352-4.543 0-2.845-1.951-4.933-5.143-4.933h-7.164v15.304h3.26v-5.438h2.388l3.008 5.438h3.743Zm-5.717-8.306h-3.422v-4.13h3.422c1.309 0 2.296.78 2.296 2.065s-.987 2.065-2.296 2.065ZM28.322 36.689c3.376 0 5.305-1.858 6.407-3.763l-2.802-1.354c-.643 1.262-2.02 2.226-3.605 2.226-2.778 0-4.799-2.134-4.799-5.025 0-2.89 2.021-5.024 4.8-5.024 1.584 0 2.961.986 3.604 2.225l2.802-1.376c-1.08-1.905-3.031-3.74-6.407-3.74-4.592 0-8.151 3.212-8.151 7.915 0 4.704 3.559 7.916 8.151 7.916ZM67.361 36.76c4.8 0 8.129-3.03 8.129-7.64 0-4.613-3.33-7.664-8.129-7.664h-6.039v15.303h6.04Zm0-2.869h-2.778v-9.567h2.778c3.146 0 4.8 2.088 4.8 4.795 0 2.593-1.769 4.772-4.8 4.772Zm21.28 2.868v-2.868h-7.577v-3.464h7.417v-2.868h-7.417v-3.235h7.578v-2.868H77.804v15.303h10.838Zm14.949 0-3.444-5.827c1.653-.39 3.352-1.836 3.352-4.543 0-2.845-1.952-4.933-5.143-4.933H91.19v15.303h3.26v-5.437h2.388l3.008 5.437h3.743Zm-5.717-8.305H94.45v-4.13h3.422c1.308 0 2.296.78 2.296 2.065s-.988 2.065-2.296 2.065Zm13.514 8.58c4.133 0 6.131-2.11 6.131-4.91 0-5.712-8.794-4.083-8.794-6.515 0-.918.78-1.537 2.181-1.537 1.562 0 3.215.527 4.455 1.674l1.814-2.386c-1.516-1.4-3.536-2.133-5.97-2.133-3.605 0-5.81 2.11-5.81 4.657 0 5.759 8.818 3.9 8.818 6.608 0 .872-.873 1.698-2.664 1.698a6.718 6.718 0 0 1-4.868-2.065l-1.768 2.478c1.424 1.445 3.536 2.432 6.475 2.432Z" fill="#fff"/>
+        </svg>
+      </a>
+      <ul class="nav" aria-label="Main">
+        <li class="nav__item nav__item--has-menu nav__item--mega">
+          <a href="plugins.html" class="nav__link">Plugins</a>
+          <div class="nav__panel nav__panel--mega">
+            <div class="nav__panel-deco" aria-hidden="true"></div>
+            <div class="nav__mega">
+              <div class="nav__mega-col">
+                <div class="nav__mega-title">Browse</div>
+                <div class="nav__mega-body">
+                  <ul class="nav__list">
+                    <li class="nav__list-item"><a href="plugins.html" class="nav__list-link"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M7 10h6M10 7v6"/></svg>All plugins</a></li>
+                    <li class="nav__list-item"><a href="plugins.html#featured" class="nav__list-link"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2l2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L2.8 7.2l5-.7L10 2z"/></svg>Team picks</a></li>
+                    <li class="nav__list-item"><a href="plugins.html#free" class="nav__list-link"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 10h12M10 4v12"/></svg>Free plugins</a></li>
+                    <li class="nav__list-item"><a href="plugins.html#new" class="nav__list-link"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l3 2"/></svg>New releases</a></li>
+                    <li class="nav__list-item"><a href="pricing.html#bundles" class="nav__list-link"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="16" height="10" rx="1"/><path d="M6 6V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>Bundle plans</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="nav__mega-col nav__mega-col--right">
+                <div class="nav__mega-title">Categories</div>
+                <div class="nav__mega-body">
+                <div class="nav__mega-grid">
+                  <a href="plugins.html"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 6h2l1.2 9h9.6L18 8H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg>E-commerce</a>
+                  <a href="plugins.html"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="5"/><path d="M13 13l4 4"/></svg>SEO</a>
+                  <a href="plugins.html"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 3l-6 3v5c0 4 6 7 6 7s6-3 6-7V6l-6-3z"/></svg>Security</a>
+                  <a href="plugins.html"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 2L6 11h4l-1 7 7-11h-4l0-5z"/></svg>Performance</a>
+                  <a href="category.html"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="14" height="14" rx="1"/><path d="M6 10h8M6 7h5"/></svg>Forms</a>
+                  <a href="plugins.html"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="7" r="3"/><path d="M4 17c0-3 2.5-5 6-5s6 2 6 5"/></svg>Membership</a>
+                  <a href="plugins.html"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="10" width="4" height="7"/><rect x="8" y="6" width="4" height="11"/><rect x="13" y="3" width="4" height="14"/></svg>Analytics</a>
+                  <a href="plugins.html"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="14" height="12" rx="1"/><path d="M6 10l3 3-3 3"/><path d="M11 13h4"/></svg>Dev Tools</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a></li>
+        <li class="nav__item"><a href="docs.html" class="nav__link">Docs</a></li>
+        <li class="nav__item"><a href="support.html" class="nav__link">Support</a></li>
+      </ul>
+      <form class="header__search" action="search.html" method="get" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+        <input type="search" name="q" placeholder="Search plugins…" aria-label="Search plugins">
+      </form>
+      <div class="header__actions">
+        <a href="wishlist.html" class="wishlist-btn" aria-label="Wishlist, 2 items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <span class="wishlist-btn__badge mono">2</span>
+        </a>
+        <a href="sign-in.html" class="btn btn--ghost btn--sm">Sign in</a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+          <span class="menu-toggle__bars" aria-hidden="true">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile navigation drawer -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav__overlay" id="mobile-nav-overlay"></div>
+    <div class="mobile-nav__panel" id="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="mobile-nav__head">
+        <span class="mobile-nav__title">Menu</span>
+        <button type="button" class="mobile-nav__close" id="mobile-nav-close" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <form class="mobile-nav__search" action="search.html" method="get" role="search">
+        <div class="mobile-nav__search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+          <input type="search" name="q" placeholder="Search plugins…" aria-label="Search plugins">
+        </div>
+      </form>
+      <nav class="mobile-nav__body" aria-label="Mobile">
+        <div class="mobile-nav__accordion" data-accordion>
+          <button type="button" class="mobile-nav__accordion-btn" aria-expanded="false">
+            Plugins
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 7.5 5 5 5-5"/></svg>
+          </button>
+          <div class="mobile-nav__accordion-panel">
+            <a href="plugins.html" class="mobile-nav__sub-link">All plugins</a>
+            <a href="plugins.html#featured" class="mobile-nav__sub-link">Team picks</a>
+            <a href="plugins.html#free" class="mobile-nav__sub-link">Free plugins</a>
+            <a href="plugins.html#new" class="mobile-nav__sub-link">New releases</a>
+            <a href="pricing.html#bundles" class="mobile-nav__sub-link">Bundle plans</a>
+            <span class="mobile-nav__sub-title">Categories</span>
+            <a href="plugins.html" class="mobile-nav__sub-link">E-commerce</a>
+            <a href="plugins.html" class="mobile-nav__sub-link">SEO</a>
+            <a href="plugins.html" class="mobile-nav__sub-link">Security</a>
+            <a href="plugins.html" class="mobile-nav__sub-link">Performance</a>
+            <a href="category.html" class="mobile-nav__sub-link">Forms</a>
+            <a href="plugins.html" class="mobile-nav__sub-link">Membership</a>
+            <a href="plugins.html" class="mobile-nav__sub-link">Analytics</a>
+            <a href="plugins.html" class="mobile-nav__sub-link">Dev Tools</a>
+          </div>
+        </div>
+        <a href="pricing.html" class="mobile-nav__link">Pricing</a>
+        <a href="docs.html" class="mobile-nav__link">Docs</a>
+        <a href="support.html" class="mobile-nav__link">Support</a>
+      </nav>
+      <div class="mobile-nav__foot mobile-nav__foot--guest">
+        <a href="wishlist.html" class="wishlist-btn" aria-label="Wishlist, 2 items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <span class="wishlist-btn__badge mono">2</span>
+        </a>
+        <a href="sign-in.html" class="btn btn--ghost">Sign in</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <main>
+    <!-- 2. Hero -->
+    <section class="hero" data-od-id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero__eyebrow eyebrow">24 plugins · Built by ProCoders</div>
+          <h1 class="hero__title">WordPress plugins from the team that ships production code</h1>
+          <p class="hero__sub">ProCoders Market is ProCoders' first-party software licensing storefront for WordPress plugins.<br>Full source with every license · WP 6.7+ and PHP 8.2+ tested · Engineering support when you need it.</p>
+          <form class="hero__search" action="search.html" method="get" role="search">
+            <input type="search" name="q" placeholder="Search by name or feature…" aria-label="Search plugins by name or tag">
+            <div class="hero-cat-select" data-hero-cat-select>
+              <input type="hidden" name="category" value="" id="hero-cat-value">
+              <button type="button" class="hero-cat-select__trigger" id="hero-cat-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="hero-cat-panel" aria-label="Filter by category">
+                <span class="hero-cat-select__label">All categories</span>
+                <svg class="hero-cat-select__chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 7.5 5 5 5-5"/></svg>
+              </button>
+              <div class="hero-cat-select__panel" id="hero-cat-panel" role="listbox" aria-label="Categories" hidden>
+                <div class="hero-cat-select__head">
+                  <span class="hero-cat-select__head-title">Categories</span>
+                  <button type="button" class="hero-cat-select__reset is-active" data-value="">All categories</button>
+                </div>
+                <div class="hero-cat-select__grid">
+                  <button type="button" role="option" class="hero-cat-select__option" data-value="e-commerce" aria-selected="false"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 6h2l1.2 9h9.6L18 8H7"/><circle cx="9" cy="17" r="1.5"/><circle cx="15" cy="17" r="1.5"/></svg><span class="hero-cat-select__option-label">E-commerce</span><svg class="hero-cat-select__check" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 7l3 3 6-6"/></svg></button>
+                  <button type="button" role="option" class="hero-cat-select__option" data-value="seo" aria-selected="false"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="9" cy="9" r="5"/><path d="M13 13l4 4"/></svg><span class="hero-cat-select__option-label">SEO</span><svg class="hero-cat-select__check" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 7l3 3 6-6"/></svg></button>
+                  <button type="button" role="option" class="hero-cat-select__option" data-value="security" aria-selected="false"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M10 3l-6 3v5c0 4 6 7 6 7s6-3 6-7V6l-6-3z"/></svg><span class="hero-cat-select__option-label">Security</span><svg class="hero-cat-select__check" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 7l3 3 6-6"/></svg></button>
+                  <button type="button" role="option" class="hero-cat-select__option" data-value="performance" aria-selected="false"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 2L6 11h4l-1 7 7-11h-4l0-5z"/></svg><span class="hero-cat-select__option-label">Performance</span><svg class="hero-cat-select__check" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 7l3 3 6-6"/></svg></button>
+                  <button type="button" role="option" class="hero-cat-select__option" data-value="forms" aria-selected="false"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="14" height="14" rx="1"/><path d="M6 10h8M6 7h5"/></svg><span class="hero-cat-select__option-label">Forms</span><svg class="hero-cat-select__check" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 7l3 3 6-6"/></svg></button>
+                  <button type="button" role="option" class="hero-cat-select__option" data-value="membership" aria-selected="false"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="7" r="3"/><path d="M4 17c0-3 2.5-5 6-5s6 2 6 5"/></svg><span class="hero-cat-select__option-label">Membership</span><svg class="hero-cat-select__check" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 7l3 3 6-6"/></svg></button>
+                  <button type="button" role="option" class="hero-cat-select__option" data-value="analytics" aria-selected="false"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="10" width="4" height="7"/><rect x="8" y="6" width="4" height="11"/><rect x="13" y="3" width="4" height="14"/></svg><span class="hero-cat-select__option-label">Analytics</span><svg class="hero-cat-select__check" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 7l3 3 6-6"/></svg></button>
+                  <button type="button" role="option" class="hero-cat-select__option" data-value="dev-tools" aria-selected="false"><svg class="nav__list-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="14" height="12" rx="1"/><path d="M6 10l3 3-3 3"/><path d="M11 13h4"/></svg><span class="hero-cat-select__option-label">Dev Tools</span><svg class="hero-cat-select__check" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 7l3 3 6-6"/></svg></button>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--blue">Search</button>
+          </form>
+        </div>
+        <div class="hero__visual">
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-visual__stage">
+              <div class="hero-visual__orb"></div>
+              <svg class="hero-visual__gear" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                <path d="M32 8v6M32 50v6M8 32h6M50 32h6M14.9 14.9l4.2 4.2M44.9 44.9l4.2 4.2M14.9 49.1l4.2-4.2M44.9 19.1l4.2-4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="32" cy="32" r="10" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="32" r="22" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 6"/>
+              </svg>
+              <svg class="hero-visual__lines" viewBox="0 0 480 360" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <path d="M120 72 C180 100, 260 48, 340 64" stroke="rgba(0,150,255,0.25)" stroke-width="1.5" stroke-dasharray="4 6"/>
+                <path d="M340 64 C320 140, 200 160, 140 248" stroke="rgba(96,22,252,0.22)" stroke-width="1.5" stroke-dasharray="4 6"/>
+                <path d="M140 248 C220 220, 300 280, 360 300" stroke="rgba(102,255,163,0.18)" stroke-width="1.5" stroke-dasharray="4 6"/>
+                <path d="M120 72 C100 180, 80 220, 140 248" stroke="rgba(0,150,255,0.15)" stroke-width="1" stroke-dasharray="3 5"/>
+                <path d="M240 120 C280 100, 320 180, 260 220" stroke="rgba(96,22,252,0.18)" stroke-width="1" stroke-dasharray="3 5"/>
+                <path d="M80 140 C140 120, 200 200, 160 260" stroke="rgba(102,255,163,0.15)" stroke-width="1" stroke-dasharray="3 5"/>
+              </svg>
+              <div class="hero-visual__chips" id="hero-visual-chips">
+                <div class="hero-visual__chip hero-visual__chip--blue hero-visual__chip--layout-0 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-1">CF7</span><span class="hero-visual__chip-label">Connect CF7 to HubSpot</span></div>
+                <div class="hero-visual__chip hero-visual__chip--violet hero-visual__chip--layout-1 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-2">FC</span><span class="hero-visual__chip-label">FormCraft Elite</span></div>
+                <div class="hero-visual__chip hero-visual__chip--green hero-visual__chip--layout-2 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-3">SG</span><span class="hero-visual__chip-label">ShieldGate Security</span></div>
+                <div class="hero-visual__chip hero-visual__chip--violet hero-visual__chip--layout-3 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-2">MS</span><span class="hero-visual__chip-label">MemberStack Pro</span></div>
+                <div class="hero-visual__chip hero-visual__chip--blue hero-visual__chip--layout-4 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-1">DK</span><span class="hero-visual__chip-label">DevKit CLI</span></div>
+                <div class="hero-visual__chip hero-visual__chip--blue hero-visual__chip--layout-5 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-1">EC</span><span class="hero-visual__chip-label">EdgeCache CDN</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Category Grid -->
+    <section class="section" data-od-id="categories">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Browse by category</h2>
+            <p class="section__lede">Eight categories, one catalog — all maintained by ProCoders.</p>
+          </div>
+          <a href="plugins.html" class="section__link">View all plugins →</a>
+        </div>
+        <div class="category-grid">
+          <a href="category.html" class="category-tile">
+            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 14h4l2 12h12l3-12H14"/><circle cx="17" cy="30" r="2"/><circle cx="27" cy="30" r="2"/></svg>
+            <div class="category-tile__text"><div class="category-tile__name">E-commerce</div><div class="category-tile__count">6 plugins</div></div>
+          </a>
+          <a href="category.html" class="category-tile">
+            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="18" r="10"/><path d="M26 26l8 8"/></svg>
+            <div class="category-tile__text"><div class="category-tile__name">SEO</div><div class="category-tile__count">4 plugins</div></div>
+          </a>
+          <a href="category.html" class="category-tile">
+            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 8l-8 4v8c0 6 8 12 8 12s8-6 8-12v-8l-8-4z"/></svg>
+            <div class="category-tile__text"><div class="category-tile__name">Security</div><div class="category-tile__count">3 plugins</div></div>
+          </a>
+          <a href="category.html" class="category-tile">
+            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 8L12 24h8l-2 10 12-20h-8l2-6z"/></svg>
+            <div class="category-tile__text"><div class="category-tile__name">Performance</div><div class="category-tile__count">5 plugins</div></div>
+          </a>
+          <a href="category.html" class="category-tile">
+            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="8" width="24" height="24" rx="2"/><path d="M14 20h12M14 16h8M14 24h10"/></svg>
+            <div class="category-tile__text"><div class="category-tile__name">Forms</div><div class="category-tile__count">8 plugins</div></div>
+          </a>
+          <a href="category.html" class="category-tile">
+            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="14" r="6"/><path d="M8 32c0-6 5-10 12-10s12 4 12 10"/></svg>
+            <div class="category-tile__text"><div class="category-tile__name">Membership</div><div class="category-tile__count">2 plugins</div></div>
+          </a>
+          <a href="category.html" class="category-tile">
+            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="22" width="8" height="12"/><rect x="16" y="14" width="8" height="20"/><rect x="26" y="8" width="8" height="26"/></svg>
+            <div class="category-tile__text"><div class="category-tile__name">Analytics</div><div class="category-tile__count">2 plugins</div></div>
+          </a>
+          <a href="category.html" class="category-tile">
+            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="28" height="24" rx="2"/><path d="M12 18l4 4-4 4"/><path d="M20 26h8"/></svg>
+            <div class="category-tile__text"><div class="category-tile__name">Dev Tools</div><div class="category-tile__count">4 plugins</div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Team picks -->
+    <section class="section" data-od-id="featured">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>ProCoders Team Picks</h2>
+            <p class="section__lede">Plugins we reach for on client projects.</p>
+          </div>
+          <a href="plugins.html#featured" class="section__link">View all →</a>
+        </div>
+        <div class="plugin-grid pcm-grid-skeleton pcm-grid-skeleton--pulse" id="featured-grid"></div>
+      </div>
+    </section>
+
+    <!-- 5. Why ProCoders Market -->
+    <section class="section" data-od-id="trust">
+      <div class="container">
+        <div class="section__head">
+          <h2>Why ProCoders Market</h2>
+        </div>
+        <div class="trust-grid">
+          <article class="trust-card">
+            <div class="trust-card__num">01</div>
+            <div class="trust-card__title">Quality-reviewed codebase</div>
+            <p class="trust-card__desc">Every release passes code review, security checks, and WordPress coding standards.</p>
+          </article>
+          <article class="trust-card">
+            <div class="trust-card__num">02</div>
+            <div class="trust-card__title">Full source included</div>
+            <p class="trust-card__desc">Readable PHP, assets, and Composer manifests ship with every download.</p>
+          </article>
+          <article class="trust-card">
+            <div class="trust-card__num">03</div>
+            <div class="trust-card__title">Current WP &amp; PHP tested</div>
+            <p class="trust-card__desc">Compatibility tested on WordPress 6.x and PHP 8.x with each core release.</p>
+          </article>
+          <article class="trust-card">
+            <div class="trust-card__num">04</div>
+            <div class="trust-card__title">Built in-house</div>
+            <p class="trust-card__desc">Designed, built, and maintained by the ProCoders engineering team.</p>
+          </article>
+          <article class="trust-card">
+            <div class="trust-card__num">05</div>
+            <div class="trust-card__title">Engineering support</div>
+            <p class="trust-card__desc">Questions go to the developers who work on the plugins — hooks, compatibility, and production issues.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5b. What is ProCoders Market? -->
+    <section class="section home-definition" data-od-id="definition">
+      <div class="container">
+        <div class="section__head">
+          <h2>What is ProCoders Market?</h2>
+          <p class="section__lede">A first-party licensing storefront for WordPress plugins built by ProCoders.</p>
+        </div>
+        <p class="home-definition__statement">ProCoders Market is not a multi-vendor marketplace; every listed plugin is designed, built, and maintained by ProCoders.</p>
+        <div class="definition-cards">
+          <article class="definition-card">
+            <h3 class="definition-card__title">First-party catalog</h3>
+            <p class="definition-card__desc">Every plugin is built and maintained by ProCoders — not resold from third-party authors.</p>
+          </article>
+          <article class="definition-card">
+            <h3 class="definition-card__title">License + source</h3>
+            <p class="definition-card__desc">Readable GPL source with every license, plus automatic updates and key delivery on Pro tiers.</p>
+          </article>
+          <article class="definition-card">
+            <h3 class="definition-card__title">WordPress today</h3>
+            <p class="definition-card__desc">The catalog focuses on WordPress and PHP stacks now, with room to expand to broader software later.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Popular / Trending Carousel -->
+    <section class="section" data-od-id="trending">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Popular WordPress Plugins This Week</h2>
+            <p class="section__lede">Plugins with steady install activity across agency and freelance stacks.</p>
+          </div>
+        </div>
+        <div class="carousel" id="trending-carousel">
+          <div class="carousel__track-wrap pcm-grid-skeleton pcm-grid-skeleton--carousel">
+            <div class="carousel__track" id="carousel-track"></div>
+          </div>
+          <div class="carousel__nav">
+            <button type="button" class="carousel__btn" id="carousel-prev" aria-label="Previous">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="carousel__dots" id="carousel-dots"></div>
+            <button type="button" class="carousel__btn" id="carousel-next" aria-label="Next">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Store Stats -->
+    <section class="section" data-od-id="stats">
+      <div class="container">
+        <div class="stats-ribbon">
+          <div class="stat-item">
+            <div class="stat-item__value"><span>24</span>+</div>
+            <div class="stat-item__label">In-house plugins</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__value">Thousands</div>
+            <div class="stat-item__label">Active installs (catalog-wide)</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__value">High<span>★</span></div>
+            <div class="stat-item__label">Ratings across ProCoders plugins</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__value"><span>8</span>+</div>
+            <div class="stat-item__label">Years building for WordPress</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Built by ProCoders -->
+    <section class="section" data-od-id="brand">
+      <div class="container">
+        <div class="brand-spotlight">
+          <div class="brand__intro">
+            <div class="brand__logo" aria-hidden="true">PC</div>
+            <div class="eyebrow">Built by ProCoders</div>
+            <h2 class="brand__name">Built and Maintained by ProCoders</h2>
+            <p class="brand__bio">Every plugin in this shop is designed, built, and maintained by the ProCoders engineering team — first-party releases with readable source, not third-party listings.</p>
+            <div class="brand__stats">
+              <span>24+ in-house plugins</span>
+              <span>Growing install base</span>
+              <span>8+ years on WordPress</span>
+            </div>
+            <a href="https://procoders.tech" class="section__link brand__link" target="_blank" rel="noopener">About the team →</a>
+          </div>
+          <div class="brand__plugins pcm-grid-skeleton pcm-grid-skeleton--pulse" id="brand-plugins" aria-label="Flagship plugins"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Reviews -->
+    <section class="section" data-od-id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <h2>What builders say</h2>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="review-card__head">
+              <div class="review-card__avatar">MK</div>
+              <div>
+                <div class="review-card__name">Mira Kowalski</div>
+                <div class="review-card__role">Lead dev · Stackline Agency</div>
+              </div>
+            </div>
+            <div class="stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-card__quote">"HubSpot sync was straightforward to map on a client site. Source was readable enough to extend without a fork."</p>
+            <p class="review-card__plugin">Purchased <a href="plugin.html">Connect CF7 to HubSpot</a></p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <div class="review-card__avatar">TR</div>
+              <div>
+                <div class="review-card__name">Tom Reyes</div>
+                <div class="review-card__role">Freelance WP developer</div>
+              </div>
+            </div>
+            <div class="stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-card__quote">"GPL source included as documented. ShieldGate replaced several security plugins across my client sites."</p>
+            <p class="review-card__plugin">Using <a href="plugins.html">ShieldGate Security</a></p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <div class="review-card__avatar">AL</div>
+              <div>
+                <div class="review-card__name">Aisha Laurent</div>
+                <div class="review-card__role">CTO · PublishFlow</div>
+              </div>
+            </div>
+            <div class="stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-card__quote">"FormCraft Elite's conditional logic API saved us a custom build. ProCoders support answered a hook question within a business day."</p>
+            <p class="review-card__plugin">Purchased <a href="plugins.html">FormCraft Elite</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Bundle CTA -->
+    <section class="section" data-od-id="bundle-cta">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Bundle pricing for agencies</h2>
+          <p>Volume licensing for client work — one invoice, up to 25 sites, priority support.</p>
+          <div class="cta-band__actions">
+            <a href="pricing.html#bundles" class="btn btn--violet">View bundle plans</a>
+            <a href="support.html" class="btn btn--ghost">Contact support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. New releases -->
+    <section class="section" data-od-id="new">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>New releases</h2>
+            <p class="section__lede">Recent additions and updates to the ProCoders catalog.</p>
+          </div>
+          <a href="plugins.html#new" class="section__link">View all →</a>
+        </div>
+        <div class="plugin-grid pcm-grid-skeleton pcm-grid-skeleton--pulse" id="new-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 12. Footer -->
+  <footer class="footer" data-od-id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+        <svg class="logo__img" width="120" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ProCoders">
+          <path d="M50.073 16.013h-3.215v2.318h3.215v-2.318ZM49.782 37.682h-3.215V40h3.215v-2.318ZM56.73 19.27l-2.6-1.89-1.365 1.874 2.6 1.891 1.365-1.874ZM43.728 36.767l-2.6-1.89-1.365 1.874 2.6 1.89 1.365-1.874ZM54.883 35.078l-2.622 1.859 1.342 1.89 2.623-1.859-1.343-1.89ZM42.551 17.372l-2.622 1.86 1.342 1.89 2.623-1.86-1.343-1.89ZM37.562 22.5l-1.02 3.047 2.2.736 1.02-3.047-2.2-.736ZM57.653 29.66l-1.02 3.047 2.2.736 1.02-3.047-2.2-.736ZM36.284 29.976l.896 3.086 2.228-.646-.896-3.086-2.228.646ZM56.729 23.527l.896 3.086 2.228-.646-.896-3.086-2.228.646Z" fill="#0096FF"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M58.164 28.021c0 5.47-4.438 9.904-9.912 9.904-5.474 0-9.912-4.434-9.912-9.904s4.438-9.903 9.912-9.903c5.474 0 9.912 4.434 9.912 9.903Zm-9.912 6.015a6.017 6.017 0 0 0 6.02-6.015 6.017 6.017 0 0 0-6.02-6.015 6.017 6.017 0 0 0-6.02 6.015 6.017 6.017 0 0 0 6.02 6.015Z" fill="#0096FF"/>
+          <path d="M48.252 32.895a4.876 4.876 0 0 0 4.878-4.874 4.876 4.876 0 0 0-4.878-4.874 4.876 4.876 0 0 0-4.878 4.874 4.876 4.876 0 0 0 4.878 4.874Z" fill="#0096FF"/>
+          <path d="M42.998.637 40.06 0l-.411 1.89 2.938.638.41-1.89ZM48.207 5.577l-1.774-2.425-1.563 1.142 1.774 2.425 1.563-1.142ZM34.254 15.084 32.48 12.66l-1.563 1.142 1.774 2.425 1.563-1.143ZM34.254 4.141l2.536-1.613L35.75.896l-2.535 1.613 1.04 1.632ZM43.767 18.228l2.47-1.714-1.105-1.589-2.47 1.714 1.105 1.589ZM48.583 12.892l.516-2.96-1.908-.331-.516 2.96 1.908.331ZM31.93 9.678l.515-2.96-1.908-.331-.515 2.959 1.907.332ZM39.56 17.276l-2.938-.637-.41 1.89 2.937.638.411-1.89Z" fill="#66F"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M47.284 9.6c0 4.263-3.458 7.718-7.724 7.718-4.265 0-7.723-3.456-7.723-7.718 0-4.262 3.458-7.717 7.723-7.717 4.266 0 7.724 3.455 7.724 7.717Zm-7.724 4.218A4.219 4.219 0 0 0 43.78 9.6c0-2.329-1.889-4.217-4.22-4.217A4.219 4.219 0 0 0 35.34 9.6c0 2.33 1.89 4.218 4.22 4.218Z" fill="#66F"/>
+          <path d="M5.26 17.172v-5.438h3.904c3.307 0 5.143-2.271 5.143-4.933 0-2.684-1.814-4.933-5.143-4.933H2v15.304h3.26Zm3.468-8.306H5.26v-4.13h3.467c1.286 0 2.25.78 2.25 2.065 0 1.262-.964 2.065-2.25 2.065Zm20 8.306-3.444-5.828c1.653-.39 3.352-1.835 3.352-4.543 0-2.845-1.951-4.933-5.143-4.933h-7.164v15.304h3.26v-5.438h2.388l3.008 5.438h3.743Zm-5.717-8.306h-3.422v-4.13h3.422c1.309 0 2.296.78 2.296 2.065s-.987 2.065-2.296 2.065ZM28.322 36.689c3.376 0 5.305-1.858 6.407-3.763l-2.802-1.354c-.643 1.262-2.02 2.226-3.605 2.226-2.778 0-4.799-2.134-4.799-5.025 0-2.89 2.021-5.024 4.8-5.024 1.584 0 2.961.986 3.604 2.225l2.802-1.376c-1.08-1.905-3.031-3.74-6.407-3.74-4.592 0-8.151 3.212-8.151 7.915 0 4.704 3.559 7.916 8.151 7.916ZM67.361 36.76c4.8 0 8.129-3.03 8.129-7.64 0-4.613-3.33-7.664-8.129-7.664h-6.039v15.303h6.04Zm0-2.869h-2.778v-9.567h2.778c3.146 0 4.8 2.088 4.8 4.795 0 2.593-1.769 4.772-4.8 4.772Zm21.28 2.868v-2.868h-7.577v-3.464h7.417v-2.868h-7.417v-3.235h7.578v-2.868H77.804v15.303h10.838Zm14.949 0-3.444-5.827c1.653-.39 3.352-1.836 3.352-4.543 0-2.845-1.952-4.933-5.143-4.933H91.19v15.303h3.26v-5.437h2.388l3.008 5.437h3.743Zm-5.717-8.305H94.45v-4.13h3.422c1.308 0 2.296.78 2.296 2.065s-.988 2.065-2.296 2.065Zm13.514 8.58c4.133 0 6.131-2.11 6.131-4.91 0-5.712-8.794-4.083-8.794-6.515 0-.918.78-1.537 2.181-1.537 1.562 0 3.215.527 4.455 1.674l1.814-2.386c-1.516-1.4-3.536-2.133-5.97-2.133-3.605 0-5.81 2.11-5.81 4.657 0 5.759 8.818 3.9 8.818 6.608 0 .872-.873 1.698-2.664 1.698a6.718 6.718 0 0 1-4.868-2.065l-1.768 2.478c1.424 1.445 3.536 2.432 6.475 2.432Z" fill="#fff"/>
+        </svg>
+      </a>
+          <p>ProCoders plugin shop. In-house builds, full source, engineering support.</p>
+          <form class="newsletter">
+            <input type="email" name="email" placeholder="Email for release alerts" aria-label="Email for new plugin release alerts" required>
+            <button type="submit" class="btn btn--blue btn--sm">Get updates</button>
+          </form>
+        </div>
+        <div class="footer__col">
+          <h4>Plugins</h4>
+          <ul>
+            <li><a href="plugins.html">All plugins</a></li>
+            <li><a href="plugins.html#featured">Team picks</a></li>
+            <li><a href="plugins.html#free">Free plugins</a></li>
+            <li><a href="plugins.html#new">New releases</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Buy &amp; manage</h4>
+          <ul>
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="account.html">My account</a></li>
+            <li><a href="refund.html">Refund policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="docs.html">Documentation</a></li>
+            <li><a href="support.html">Support center</a></li>
+            <li><a href="docs.html#compatibility">Compatibility</a></li>
+            <li><a href="plugin.html#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>ProCoders</h4>
+          <ul>
+            <li><a href="https://procoders.tech" target="_blank" rel="noopener">About the team</a></li>
+            <li><a href="https://procoders.tech" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://procoders.tech" target="_blank" rel="noopener">Discord</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="caption">© 2026 ProCoders Market. GPL-compatible plugins.</p>
+        <div class="footer__social">
+          <a href="https://procoders.tech" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></a>
+          <a href="https://procoders.tech" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://procoders.tech" target="_blank" rel="noopener" aria-label="Discord"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028 14.09 14.09 0 001.226-1.994.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const PLUGINS = [
+      { id: 'cf7hubspot', name: 'Connect CF7 to HubSpot', abbr: 'CF7', bg: 'icon-bg-1', rating: 5.0, reviews: 2, price: '$49', free: false, installs: '300+', category: 'Forms', featured: true, accent: 'plugin-card--accent-blue', excerpt: 'Sync Contact Form 7 submissions to HubSpot contacts and deals.' },
+      { id: 'formcraft', name: 'FormCraft Elite', abbr: 'FC', bg: 'icon-bg-2', rating: 4.9, reviews: 218, price: '$59', free: false, installs: '8k', category: 'Forms', featured: true, accent: 'plugin-card--accent-violet', excerpt: 'Advanced forms with conditional logic API and field validation hooks.' },
+      { id: 'seopulse', name: 'SEO Pulse', abbr: 'SP', bg: 'icon-bg-5', rating: 4.7, reviews: 156, price: '$29', free: false, installs: '6k', category: 'SEO', featured: false, accent: '', excerpt: 'Real-time SEO scoring and schema markup for posts and pages.' },
+      { id: 'shieldgate', name: 'ShieldGate Security', abbr: 'SG', bg: 'icon-bg-3', rating: 4.8, reviews: 891, price: null, free: true, installs: '18k', category: 'Security', featured: true, accent: 'plugin-card--accent-green', excerpt: 'Firewall, malware scan, and login hardening for production sites.' },
+      { id: 'webpilot', name: 'WebPilot Analytics', abbr: 'WP', bg: 'icon-bg-4', rating: 4.6, reviews: 94, price: '$39', free: false, installs: '4k', category: 'Analytics', featured: false, accent: '', excerpt: 'Privacy-first analytics dashboard with custom event tracking.' },
+      { id: 'memberstack', name: 'MemberStack Pro', abbr: 'MS', bg: 'icon-bg-2', rating: 4.8, reviews: 203, price: '$79', free: false, installs: '5k', category: 'Membership', featured: true, accent: 'plugin-card--accent-violet', excerpt: 'Membership tiers, gated content, and subscription billing for WP.' },
+      { id: 'devkit', name: 'DevKit CLI', abbr: 'DK', bg: 'icon-bg-1', rating: 4.9, reviews: 67, price: null, free: true, installs: '9k', category: 'Dev Tools', featured: true, accent: 'plugin-card--accent-blue', excerpt: 'WP-CLI extensions and local dev helpers for plugin authors.' },
+      { id: 'cartflow', name: 'CartFlow Boost', abbr: 'CB', bg: 'icon-bg-4', rating: 4.5, reviews: 112, price: '$45', free: false, installs: '3k', category: 'E-commerce', featured: false, accent: '', excerpt: 'Checkout funnel optimization and abandoned cart recovery for WooCommerce.' },
+      { id: 'edgecache', name: 'EdgeCache CDN', abbr: 'EC', bg: 'icon-bg-1', rating: 4.8, reviews: 124, price: '$39', free: false, installs: '7k', category: 'Performance', featured: true, accent: 'plugin-card--accent-blue', excerpt: 'Edge caching and CDN purge hooks for high-traffic WordPress sites.' },
+      { id: 'minifypro', name: 'MinifyPro', abbr: 'MP', bg: 'icon-bg-5', rating: 4.7, reviews: 88, price: '$29', free: false, installs: '5k', category: 'Performance', featured: false, accent: '', excerpt: 'CSS/JS minification and critical path optimization for Core Web Vitals.' },
+    ];
+
+    const starSvg = '<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
+    const installSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>';
+
+
+    function heroChipAccent(accent) {
+      if (accent && accent.includes('violet')) return 'hero-visual__chip--violet';
+      if (accent && accent.includes('green')) return 'hero-visual__chip--green';
+      return 'hero-visual__chip--blue';
+    }
+
+    function clearGridSkeleton(el) {
+      if (!el) return;
+      el.classList.remove('pcm-grid-skeleton', 'pcm-grid-skeleton--pulse', 'pcm-grid-skeleton--carousel');
+    }
+
+    function renderHeroCloud() {
+      const chipsEl = document.getElementById('hero-visual-chips');
+      if (!chipsEl) return;
+      const featured = PLUGINS.filter(p => p.featured).slice(0, 6);
+      chipsEl.classList.add('is-hydrated');
+      chipsEl.innerHTML = featured.map((p, i) => {
+        const layoutClass = `hero-visual__chip--layout-${i}`;
+        return `<div class="hero-visual__chip ${heroChipAccent(p.accent)} ${layoutClass}"><span class="hero-visual__chip-icon ${p.bg}">${p.abbr}</span><span class="hero-visual__chip-label">${p.name}</span></div>`;
+      }).join('');
+    }
+
+    renderHeroCloud();
+
+    function renderPluginCard(p, compact, opts = {}) {
+      const stars = Array(5).fill(starSvg).join('');
+      const priceBadge = p.free
+        ? '<span class="badge badge--free">Free</span>'
+        : `<span class="badge badge--price">${p.price}</span>`;
+      const featuredBadge = (p.featured && !opts.hideFeatured)
+        ? '<span class="badge badge--featured">Team pick</span>'
+        : '';
+      const layout = opts.layout === 'list' ? 'list' : 'grid';
+      const layoutClass = layout === 'list' ? ' plugin-card--list' : ' plugin-card--grid';
+      const compactClass = compact ? ' plugin-card--compact' : '';
+      const accent = p.accent ? ' ' + p.accent : '';
+      const href = p.id === 'cf7hubspot' ? 'plugin.html' : 'plugins.html';
+
+      if (layout === 'grid') {
+        const categoryTag = p.category
+          ? `<span class="plugin-card__tag">${p.category.toLowerCase()}</span>`
+          : '';
+        const featuredTag = (p.featured && !opts.hideFeatured)
+          ? '<span class="plugin-card__tag plugin-card__tag--featured">Team pick</span>'
+          : '';
+        const excerpt = p.excerpt ? `<p class="plugin-card__excerpt">${p.excerpt}</p>` : '';
+        const priceStat = p.free
+          ? '<span class="plugin-card__stat plugin-card__stat--free">Free</span>'
+          : `<span class="plugin-card__stat plugin-card__stat--price">${p.price}</span>`;
+
+        return `
+        <a href="${href}" class="plugin-card${layoutClass}${compactClass}${accent}">
+          <div class="plugin-card__head">
+            <div class="plugin-card__icon ${p.bg}">${p.abbr}</div>
+            <div class="plugin-card__meta">
+              <h5>${p.name}</h5>
+              <div class="plugin-card__stats">
+                <span class="plugin-card__stat plugin-card__stat--rating">${starSvg} ${p.rating}</span>
+                <span class="plugin-card__stat plugin-card__stat--installs">${installSvg} ${p.installs}</span>
+                ${priceStat}
+              </div>
+            </div>
+          </div>
+          ${excerpt}
+          <div class="plugin-card__tags">
+            ${categoryTag}
+            ${featuredTag}
+          </div>
+        </a>`;
+      }
+
+      const excerpt = p.excerpt ? `<p class="plugin-card__excerpt">${p.excerpt}</p>` : '';
+      const titleRowBadge = (p.featured && !opts.hideFeatured) ? featuredBadge : '';
+      const ratingBlock = `<div class="plugin-card__rating">
+            <span class="stars" aria-label="${p.rating} stars">${stars}</span>
+            <span class="plugin-card__rating-value">${p.rating} (${p.reviews})</span>
+            <span class="plugin-card__installs-inline">· ${p.installs} installs</span>
+          </div>`;
+
+      return `
+        <a href="${href}" class="plugin-card${layoutClass}${compactClass}${accent}">
+          <div class="plugin-card__head">
+            <div class="plugin-card__icon ${p.bg}">${p.abbr}</div>
+            <div class="plugin-card__meta">
+              <div class="plugin-card__title-row">
+                <h5>${p.name}</h5>
+                ${titleRowBadge}
+              </div>
+              ${ratingBlock}
+              ${excerpt}
+            </div>
+          </div>
+          <div class="plugin-card__footer">
+            ${priceBadge}
+            <span class="plugin-card__installs caption">${p.installs} installs</span>
+          </div>
+          <div class="plugin-card__actions">
+            ${priceBadge}
+            <span class="plugin-card__view-link">View →</span>
+          </div>
+        </a>`;
+    }
+
+    const featuredGrid = document.getElementById('featured-grid');
+    featuredGrid.innerHTML = PLUGINS.filter(p => p.featured).slice(0, 6).map(p => renderPluginCard(p)).join('');
+    clearGridSkeleton(featuredGrid);
+
+    const brandFlagshipIds = ['cf7hubspot', 'shieldgate', 'formcraft'];
+    const brandPlugins = document.getElementById('brand-plugins');
+    brandPlugins.innerHTML = brandFlagshipIds
+      .map(id => PLUGINS.find(p => p.id === id))
+      .filter(Boolean)
+      .map(p => renderPluginCard(p, true, { hideFeatured: true }))
+      .join('');
+    clearGridSkeleton(brandPlugins);
+
+    const newGrid = document.getElementById('new-grid');
+    newGrid.innerHTML = PLUGINS.slice(-4).map(p => renderPluginCard(p, true)).join('');
+    clearGridSkeleton(newGrid);
+
+    const trending = PLUGINS.slice(0, 6);
+    const track = document.getElementById('carousel-track');
+    const trackWrap = document.querySelector('.carousel__track-wrap');
+    track.innerHTML = trending.map(p => renderPluginCard(p)).join('');
+    clearGridSkeleton(trackWrap);
+
+    let slideIndex = 0;
+    const dotsEl = document.getElementById('carousel-dots');
+
+    function slideCount() {
+      return Math.max(1, Math.ceil(trending.length / getVisible()));
+    }
+
+    function rebuildDots() {
+      dotsEl.innerHTML = '';
+      for (let i = 0; i < slideCount(); i++) {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'carousel__dot' + (i === slideIndex ? ' is-active' : '');
+        dot.setAttribute('aria-label', `Slide ${i + 1}`);
+        dot.addEventListener('click', () => goTo(i));
+        dotsEl.appendChild(dot);
+      }
+    }
+
+    rebuildDots();
+
+    function getVisible() {
+      if (window.innerWidth <= 767) return 1;
+      if (window.innerWidth <= 991) return 2;
+      return 4;
+    }
+
+    function goTo(index) {
+      const visible = getVisible();
+      const maxIndex = slideCount() - 1;
+      slideIndex = Math.max(0, Math.min(index, maxIndex));
+      const card = track.querySelector('.plugin-card');
+      const gap = 20;
+      const cardWidth = card ? card.offsetWidth + gap : 300;
+      track.style.transform = `translateX(-${slideIndex * cardWidth * visible}px)`;
+      dotsEl.querySelectorAll('.carousel__dot').forEach((d, i) => {
+        d.classList.toggle('is-active', i === slideIndex);
+      });
+    }
+
+    document.getElementById('carousel-prev').addEventListener('click', () => goTo(slideIndex - 1));
+    document.getElementById('carousel-next').addEventListener('click', () => goTo(slideIndex + 1));
+    window.addEventListener('resize', () => {
+      slideIndex = Math.min(slideIndex, slideCount() - 1);
+      rebuildDots();
+      goTo(slideIndex);
+    });
+
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('is-scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    /* Carousel touch swipe */
+    let touchStartX = 0;
+    let touchEndX = 0;
+    trackWrap.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    trackWrap.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) goTo(slideIndex + 1);
+        else goTo(slideIndex - 1);
+      }
+    }, { passive: true });
+
+
+    /* Hero category select */
+    (function () {
+      const root = document.querySelector('[data-hero-cat-select]');
+      if (!root) return;
+      const trigger = root.querySelector('#hero-cat-trigger');
+      const panel = root.querySelector('#hero-cat-panel');
+      const hiddenInput = root.querySelector('#hero-cat-value');
+      const label = root.querySelector('.hero-cat-select__label');
+      const resetBtn = root.querySelector('.hero-cat-select__reset');
+      const options = root.querySelectorAll('.hero-cat-select__option');
+
+      function selectCategory(value, displayLabel) {
+        hiddenInput.value = value;
+        label.textContent = displayLabel;
+        options.forEach((o) => {
+          const selected = o.dataset.value === value;
+          o.classList.toggle('is-selected', selected);
+          o.setAttribute('aria-selected', selected ? 'true' : 'false');
+        });
+        if (resetBtn) resetBtn.classList.toggle('is-active', value === '');
+      }
+
+      function closePanel() {
+        root.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+        panel.hidden = true;
+      }
+
+      function openPanel() {
+        root.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+        panel.hidden = false;
+      }
+
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        root.classList.contains('is-open') ? closePanel() : openPanel();
+      });
+
+      document.addEventListener('click', (e) => {
+        if (root.classList.contains('is-open') && !root.contains(e.target)) closePanel();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && root.classList.contains('is-open')) {
+          closePanel();
+          trigger.focus();
+        }
+      });
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          selectCategory('', 'All categories');
+          closePanel();
+        });
+      }
+
+      options.forEach((opt) => {
+        opt.addEventListener('click', () => {
+          const value = opt.dataset.value;
+          const textEl = opt.querySelector('.hero-cat-select__option-label');
+          selectCategory(value, textEl ? textEl.textContent : opt.textContent.trim());
+          closePanel();
+        });
+      });
+    })();
+
+  </script>
+
+  <div class="cookie-bar" id="cookie-bar" role="region" aria-label="Cookie consent">
+    <div class="cookie-bar__inner">
+      <p class="cookie-bar__text">We use essential cookies for checkout and optional analytics to improve the shop. See our <a href="privacy.html">privacy policy</a>.</p>
+      <div class="cookie-bar__actions">
+        <button type="button" class="btn btn--ghost" id="cookie-manage">Manage</button>
+        <button type="button" class="btn btn--ghost" id="cookie-essential">Essential only</button>
+        <button type="button" class="btn btn--ghost" id="cookie-accept">Accept all</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
