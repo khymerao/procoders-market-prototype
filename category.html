@@ -555,12 +555,14 @@
     viewGridBtn.addEventListener('click', () => setView('grid'));
     viewListBtn.addEventListener('click', () => setView('list'));
 
-    PCMCatalog.load().then(function (catalog) {
-      var slug = getCategorySlug();
-      var categoryName = CATEGORY_PAGES[slug].name;
-      FORMS_PLUGINS = catalog.filter(function (p) { return p.category === categoryName; });
-      applyCategoryMeta(slug, FORMS_PLUGINS.length);
-      setView(currentView);
+    document.addEventListener('DOMContentLoaded', function () {
+      PCMCatalog.load().then(function (catalog) {
+        var slug = getCategorySlug();
+        var categoryName = CATEGORY_PAGES[slug].name;
+        FORMS_PLUGINS = catalog.filter(function (p) { return p.category === categoryName; });
+        applyCategoryMeta(slug, FORMS_PLUGINS.length);
+        setView(currentView);
+      });
     });
 
     document.getElementById('load-more').addEventListener('click', function() {

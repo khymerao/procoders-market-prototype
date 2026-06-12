@@ -478,12 +478,14 @@
     document.getElementById('load-more').addEventListener('click', function() { this.textContent = 'All plugins loaded'; this.disabled = true; });
     document.getElementById('cat-search').addEventListener('input', applySearchFilter);
 
-    // Hash-based filter on load
+    // Hash-based filter on load (after deferred pcm-catalog.js)
     const hashMap = { featured: 'featured', free: 'free', new: 'new' };
-    PCMCatalog.load().then(function (catalog) {
-      ALL_PLUGINS = catalog;
-      if (hashMap[location.hash.slice(1)]) setFilter(hashMap[location.hash.slice(1)]);
-      else setView(currentView);
+    document.addEventListener('DOMContentLoaded', function () {
+      PCMCatalog.load().then(function (catalog) {
+        ALL_PLUGINS = catalog;
+        if (hashMap[location.hash.slice(1)]) setFilter(hashMap[location.hash.slice(1)]);
+        else setView(currentView);
+      });
     });
 </script>
 
