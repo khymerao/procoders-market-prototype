@@ -285,6 +285,19 @@ function buildInstallation(p) {
         </section>`;
 }
 
+function buildHeaderIcon(p) {
+  const icon =
+    p.assets && p.assets.icon256
+      ? p.assets.icon256
+      : p.assets && p.assets.icon128
+        ? p.assets.icon128
+        : null;
+  if (icon) {
+    return `<div class="plugin-header__icon plugin-header__icon--img" aria-hidden="true"><img src="${icon}" alt="" width="72" height="72" loading="eager" decoding="async"></div>`;
+  }
+  return `<div class="plugin-header__icon" aria-hidden="true">${esc(p.abbr)}</div>`;
+}
+
 function buildJsonLd(p) {
   const url = `https://market.procoders.tech/plugins/${p.slug}/`;
   const desc = decodeHtml(p.excerpt).slice(0, 200);
@@ -392,8 +405,8 @@ function generatePage(p) {
   );
 
   html = html.replace(
-    /<div class="plugin-header__icon[^>]*>CF7<\/div>/,
-    `<div class="plugin-header__icon" aria-hidden="true">${esc(p.abbr)}</div>`
+    /<div class="plugin-header__icon[^>]*>[\s\S]*?<\/div>/,
+    buildHeaderIcon(p)
   );
   html = html.replace(
     /<h1 class="plugin-header__title">Connect CF7 to HubSpot<\/h1>/,

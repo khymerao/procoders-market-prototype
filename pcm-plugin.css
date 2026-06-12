@@ -91,6 +91,18 @@ h3 { font-size: 18px; font-weight: 600; color: var(--fg); margin-bottom: 12px; }
   font-family: var(--font-mono); font-size: 20px; font-weight: 500; color: var(--fg);
   background: linear-gradient(135deg, #0096ff, #6016fc);
 }
+.plugin-header__icon--img {
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+}
+.plugin-header__icon--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;
+}
 .plugin-header__content { flex: 1; min-width: 0; }
 .plugin-header__top {
   display: flex;
