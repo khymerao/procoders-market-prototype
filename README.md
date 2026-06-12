@@ -36,9 +36,36 @@ Open `index.html` (or `/` with `vercel.json` on Vercel).
 - Accents: blue `#0096ff`, violet `#6016fc`, magenta `#df00e3`, green `#66ffa3`
 - Fonts: Poppins + Roboto Mono · container 1320px
 
-## Deploy
+## Deploy (Vercel via GitHub Actions)
 
-`vercel.json` is included for static hosting with clean URLs.
+Every push to `main` triggers [`.github/workflows/vercel-deploy.yml`](.github/workflows/vercel-deploy.yml).
+
+### One-time setup
+
+1. Create a token at [vercel.com/account/tokens](https://vercel.com/account/tokens) (Full Account scope).
+2. Bootstrap the Vercel project and print secret values:
+
+```bash
+VERCEL_TOKEN=your_token ./scripts/bootstrap-vercel.sh
+```
+
+3. Add repository secrets on GitHub (`Settings → Secrets → Actions`):
+
+| Secret | Value |
+|--------|-------|
+| `VERCEL_TOKEN` | Vercel API token |
+| `VERCEL_ORG_ID` | from `.vercel/project.json` after bootstrap |
+| `VERCEL_PROJECT_ID` | from `.vercel/project.json` after bootstrap |
+
+Or via CLI:
+
+```bash
+gh secret set VERCEL_TOKEN --repo khymerao/procoders-market-prototype
+gh secret set VERCEL_ORG_ID --repo khymerao/procoders-market-prototype
+gh secret set VERCEL_PROJECT_ID --repo khymerao/procoders-market-prototype
+```
+
+`vercel.json` provides clean URLs and security headers for static hosting.
 
 ## License
 

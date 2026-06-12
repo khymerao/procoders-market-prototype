@@ -3,3 +3,4 @@
 node_modules/
 *.artifact.json
 .od-skills/
+.vercel/
