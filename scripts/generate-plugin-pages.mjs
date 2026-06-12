@@ -329,7 +329,12 @@ function buildJsonLd(p) {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://market.procoders.tech/' },
       { '@type': 'ListItem', position: 2, name: 'WordPress Plugins', item: 'https://market.procoders.tech/wordpress-plugins/' },
-      { '@type': 'ListItem', position: 3, name: p.category, item: 'https://market.procoders.tech/categories/forms/' },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: p.category,
+        item: `https://market.procoders.tech/${categoryBreadcrumb(p.category).href.replace('.html', '/')}`
+      },
       { '@type': 'ListItem', position: 4, name: p.name, item: url }
     ]
   });
@@ -345,7 +350,7 @@ function generatePage(p) {
       : 'https://market.procoders.tech/assets/og/procoders-market.png';
   const bc = categoryBreadcrumb(p.category);
   const cta = buildCta(p);
-  const desc = esc(decodeHtml(p.excerpt));
+  const desc = esc(decodeHtml(p.excerpt).slice(0, 155));
   const overview = esc(decodeHtml(p.description).slice(0, 800));
 
   let html = template;
@@ -473,8 +478,9 @@ function generatePage(p) {
   }
 
   html = html.replace(
-    /<div class="meta-row"><span class="meta-row__label">Version[\s\S]*?<div class="meta-support">/,
-    `<div class="meta-row"><span class="meta-row__label">Author</span><span class="meta-row__value">ProCoders</span></div>
+    /<div class="meta-card__title">Plugin info<\/div>[\s\S]*?<div class="meta-support">/,
+    `<div class="meta-card__title">Plugin info</div>
+        <div class="meta-row"><span class="meta-row__label">Author</span><span class="meta-row__value">ProCoders</span></div>
         ${buildMetaCard(p)}
         <div class="meta-support">`
   );
