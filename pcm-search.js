@@ -18,7 +18,7 @@
     var installsDisplay = p.installs || '—';
     return (
       '<article><a href="' + p.href + '" class="plugin-card plugin-card--grid' + accent + '" data-featured="' + p.featured + '" data-free="' + p.free + '" data-new="' + p.isNew + '">' +
-      '<div class="plugin-card__head"><div class="plugin-card__icon ' + p.bg + '">' + p.abbr + '</div>' +
+      '<div class="plugin-card__head">' + PCMCatalog.renderCardIcon(p) +
       '<div class="plugin-card__meta"><h3>' + p.name + '</h3>' +
       '<div class="plugin-card__stats"><span class="plugin-card__stat plugin-card__stat--rating">' + starSvg + ' ' + ratingDisplay + '</span>' +
       '<span class="plugin-card__stat plugin-card__stat--installs">' + installSvg + ' ' + installsDisplay + '</span>' + priceStat +

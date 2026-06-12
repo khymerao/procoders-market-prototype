@@ -49,6 +49,34 @@
     return 'plugin-' + slug + '.html';
   }
 
+  function iconSrc(product) {
+    return product.assets && product.assets.icon128 ? product.assets.icon128 : null;
+  }
+
+  function renderCardIcon(product) {
+    var src = iconSrc(product);
+    if (src) {
+      return (
+        '<div class="plugin-card__icon plugin-card__icon--img">' +
+        '<img src="' + src + '" alt="" width="56" height="56" loading="lazy" decoding="async">' +
+        '</div>'
+      );
+    }
+    return '<div class="plugin-card__icon ' + product.bg + '">' + product.abbr + '</div>';
+  }
+
+  function renderHeroChipIcon(product) {
+    var src = iconSrc(product);
+    if (src) {
+      return (
+        '<span class="hero-visual__chip-icon hero-visual__chip-icon--img">' +
+        '<img src="' + src + '" alt="" width="40" height="40" loading="lazy" decoding="async">' +
+        '</span>'
+      );
+    }
+    return '<span class="hero-visual__chip-icon ' + product.bg + '">' + product.abbr + '</span>';
+  }
+
   function mapProduct(product, index) {
     var hasPro = product.price && product.price.pro != null;
     var isFreeOnly = !hasPro && product.price && product.price.free;
@@ -131,6 +159,9 @@
     filterByCategory: filterByCategory,
     mapProduct: mapProduct,
     pluginHref: pluginHref,
+    iconSrc: iconSrc,
+    renderCardIcon: renderCardIcon,
+    renderHeroChipIcon: renderHeroChipIcon,
     CATEGORY_SLUGS: CATEGORY_SLUGS,
     categorySlugForName: categorySlugForName,
     truncate: truncate,

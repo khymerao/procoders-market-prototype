@@ -868,6 +868,18 @@ a.plugin-card {
   font-weight: 500;
   color: var(--fg);
 }
+.plugin-card__icon--img {
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+}
+.plugin-card__icon--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;
+}
 .plugin-card__meta { flex: 1; min-width: 0; }
 .plugin-card__title-row {
   display: flex;

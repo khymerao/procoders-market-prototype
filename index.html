@@ -637,7 +637,7 @@
       chipsEl.classList.add('is-hydrated');
       chipsEl.innerHTML = heroPlugins.map((p, i) => {
         const layoutClass = `hero-visual__chip--layout-${i}`;
-        return `<div class="hero-visual__chip ${heroChipAccent(p.accent)} ${layoutClass}"><span class="hero-visual__chip-icon ${p.bg}">${p.abbr}</span><span class="hero-visual__chip-label">${p.name}</span></div>`;
+        return `<div class="hero-visual__chip ${heroChipAccent(p.accent)} ${layoutClass}">${PCMCatalog.renderHeroChipIcon(p)}<span class="hero-visual__chip-label">${p.name}</span></div>`;
       }).join('');
     }
 
@@ -672,7 +672,7 @@
         return `
         <a href="${href}" class="plugin-card${layoutClass}${compactClass}${accent}">
           <div class="plugin-card__head">
-            <div class="plugin-card__icon ${p.bg}">${p.abbr}</div>
+            ${PCMCatalog.renderCardIcon(p)}
             <div class="plugin-card__meta">
               <h5>${p.name}</h5>
               <div class="plugin-card__stats">
@@ -701,7 +701,7 @@
       return `
         <a href="${href}" class="plugin-card${layoutClass}${compactClass}${accent}">
           <div class="plugin-card__head">
-            <div class="plugin-card__icon ${p.bg}">${p.abbr}</div>
+            ${PCMCatalog.renderCardIcon(p)}
             <div class="plugin-card__meta">
               <div class="plugin-card__title-row">
                 <h5>${p.name}</h5>

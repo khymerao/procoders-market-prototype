@@ -462,7 +462,7 @@
         <article>
           <a href="${p.href}" class="plugin-card${layoutClass}${accent}">
             <div class="plugin-card__head">
-              <div class="plugin-card__icon ${p.bg}">${p.abbr}</div>
+              ${PCMCatalog.renderCardIcon(p)}
               <div class="plugin-card__meta">
                 <h3>${p.name}</h3>
                 <div class="plugin-card__stats">
@@ -495,7 +495,7 @@
         <article>
           <a href="${p.href}" class="plugin-card${layoutClass}${accent}">
             <div class="plugin-card__head">
-              <div class="plugin-card__icon ${p.bg}">${p.abbr}</div>
+              ${PCMCatalog.renderCardIcon(p)}
               <div class="plugin-card__meta">
                 <div class="plugin-card__title-row">
                   <h2>${p.name}</h2>
