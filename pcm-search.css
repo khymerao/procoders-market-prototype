@@ -1,0 +1,220 @@
+/* Search page + 404 — ProCoders Market */
+
+form.header__search {
+  flex: 1;
+  max-width: 360px;
+  position: relative;
+  margin: 0;
+}
+
+.search-page {
+  padding-bottom: clamp(48px, 8vw, 96px);
+}
+
+.search-page__header {
+  margin-bottom: 32px;
+}
+
+.search-page__header h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.search-page__intro {
+  max-width: 65ch;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+
+#search-summary {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: stretch;
+  padding: 20px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  background: var(--glass);
+  margin-bottom: 32px;
+}
+
+.search-bar__field {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.search-bar__field label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.search-bar__field input[type="search"],
+.search-bar__field select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--glass-border);
+  background: rgba(11, 11, 34, 0.6);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 15px;
+  transition: border-color var(--transition);
+}
+
+.search-bar__field input[type="search"]:focus,
+.search-bar__field select:focus {
+  border-color: var(--blue);
+  outline: none;
+}
+
+.search-bar__field input[type="search"]:focus-visible,
+.search-bar__field select:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.search-bar__field select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23a6bfd0' stroke-width='2'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+.search-bar__submit {
+  align-self: flex-end;
+  flex: 0 0 auto;
+}
+
+.search-bar__submit .btn {
+  min-height: 44px;
+  min-width: 120px;
+}
+
+.search-results-stage {
+  min-height: min(70vh, 640px);
+  position: relative;
+}
+
+#search-results.is-hidden {
+  display: none;
+}
+
+.search-empty {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(48px, 8vw, 80px) 24px;
+  border: 1px dashed var(--glass-border);
+  border-radius: var(--radius-lg);
+  background: var(--glass);
+}
+
+.search-empty.is-visible {
+  display: flex;
+}
+
+.search-empty__icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+  color: var(--muted);
+}
+
+.search-empty__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.search-empty h2 {
+  font-size: clamp(22px, 3vw, 28px);
+  margin-bottom: 8px;
+}
+
+.search-empty p {
+  color: var(--muted);
+  max-width: 42ch;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.search-empty__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* 404 error page */
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: min(70vh, 640px);
+  padding: clamp(48px, 10vw, 96px) 24px;
+}
+
+.error-page__code {
+  font-family: var(--font-mono);
+  font-size: clamp(72px, 18vw, 160px);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--magenta);
+  margin-bottom: 8px;
+  user-select: none;
+}
+
+.error-page h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.error-page__lede {
+  color: var(--muted);
+  font-size: clamp(15px, 2vw, 17px);
+  max-width: 48ch;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.error-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar__submit {
+    align-self: stretch;
+  }
+
+  .search-bar__submit .btn {
+    width: 100%;
+  }
+}
