@@ -50,6 +50,7 @@
   <link rel="stylesheet" href="pcm-archive.css">
   <link rel="stylesheet" href="pcm-search.css">
   <script src="pcm-shared.js" defer></script>
+  <script src="pcm-catalog.js" defer></script>
   <script src="pcm-search.js" defer></script>
 </head>
 <body class="has-cookie-bar" data-auth="guest">
@@ -193,7 +194,7 @@
       </nav>
       <header class="search-page__header">
         <h1>Search plugins</h1>
-        <p class="search-page__intro">Browse first-party WordPress plugins from ProCoders — forms, SEO, security, performance, and developer tools. Filter by keyword or category, or explore the full catalog below.</p>
+        <p class="search-page__intro">Browse first-party WordPress plugins from ProCoders — forms, SEO, AI, and developer tools. Filter by keyword or category, or explore the full catalog below.</p>
         <p id="search-summary" aria-live="polite">Showing all ProCoders plugins</p>
       </header>
       <form id="search-form" class="search-bar" action="search.html" method="get" role="search">
@@ -205,14 +206,10 @@
           <label for="search-category">Category</label>
           <select id="search-category" name="category" aria-label="Filter by category">
             <option value="">All categories</option>
-            <option value="e-commerce">E-commerce</option>
-            <option value="seo">SEO</option>
-            <option value="security">Security</option>
-            <option value="performance">Performance</option>
             <option value="forms">Forms</option>
-            <option value="membership">Membership</option>
-            <option value="analytics">Analytics</option>
             <option value="dev-tools">Dev Tools</option>
+            <option value="seo">SEO</option>
+            <option value="ai">AI</option>
           </select>
         </div>
         <div class="search-bar__submit">
@@ -221,20 +218,16 @@
       </form>
       <noscript>
         <ul class="search-fallback-list">
-          <li><a href="plugin.html">Connect CF7 to HubSpot</a></li>
-          <li><a href="plugins.html">FormCraft Elite</a></li>
-          <li><a href="plugins.html">FormLogic API</a></li>
-          <li><a href="plugins.html">SmartForms Lite</a></li>
-          <li><a href="plugins.html">SEO Pulse</a></li>
-          <li><a href="plugins.html">ShieldGate Security</a></li>
-          <li><a href="plugins.html">WebPilot Analytics</a></li>
-          <li><a href="plugins.html">MemberStack Pro</a></li>
-          <li><a href="plugins.html">DevKit CLI</a></li>
-          <li><a href="plugins.html">CartFlow Boost</a></li>
-          <li><a href="plugins.html">EdgeCache CDN</a></li>
-          <li><a href="plugins.html">MinifyPro</a></li>
-          <li><a href="plugins.html">Webhook Sync</a></li>
-          <li><a href="plugins.html">MailChimp Bridge</a></li>
+          <li><a href="plugin-connect-cf7-to-hubspot.html">Connect CF7 to HubSpot</a></li>
+          <li><a href="plugin-connect-cf7-to-pipedrive.html">Connect CF7 to PipeDrive</a></li>
+          <li><a href="plugin-connect-cf7-to-salesforce.html">Connect CF7 to Salesforce</a></li>
+          <li><a href="plugin-connect-cf7-to-zoho.html">Connect CF7 to Zoho</a></li>
+          <li><a href="plugin-brainy-search.html">BrainySearch</a></li>
+          <li><a href="plugin-omnimind.html">OmniMind Integration</a></li>
+          <li><a href="plugin-singular-markdown.html">Singular Markdown</a></li>
+          <li><a href="plugin-plugin-procoders-gutenberg-blocks.html">Procoders Blocks</a></li>
+          <li><a href="plugin-acf-svg-icon.html">ACF SVG Icon</a></li>
+          <li><a href="plugin-wp-starter.html">WP Starter</a></li>
         </ul>
       </noscript>
       <div class="search-results-stage">
@@ -300,7 +293,7 @@
             <li><a href="docs.html">Documentation</a></li>
             <li><a href="support.html">Support center</a></li>
             <li><a href="docs.html#compatibility">Compatibility</a></li>
-            <li><a href="plugin.html#changelog">Changelog</a></li>
+            <li><a href="plugin-connect-cf7-to-hubspot.html#changelog">Changelog</a></li>
           </ul>
         </div>
         <div class="footer__col">

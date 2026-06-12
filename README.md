@@ -2,7 +2,7 @@
 
 Static UI/UX prototype for **ProCoders Market**, the first-party WordPress plugin shop by ProCoders.
 
-Frozen at **OD iteration 47** (21 pages, 9 CSS/JS layers). Design tokens, iteration log, and WP integration plan live in the companion theme repo under `wp-content/themes/procoders-market/docs/`.
+Frozen at **OD iteration 49** — 10 real ProCoders products, `catalog.json` + `pcm-catalog.js`, 10 `plugin-{slug}.html` singles, banner assets under `assets/plugins/`. Design tokens and iteration log live in the companion theme repo under `wp-content/themes/procoders-market/docs/`.
 
 ## Preview locally
 
@@ -21,7 +21,7 @@ Open `index.html` (or `/` with `vercel.json` on Vercel).
 |-------|-------|
 | Shared | `pcm-shared.css`, `pcm-shared.js` |
 | Home | `index.html`, `pcm-home.css` |
-| Catalog | `plugins.html`, `category.html`, `plugin.html`, `pcm-archive.css`, `pcm-plugin.css` |
+| Catalog | `catalog.json`, `pcm-catalog.js`, `plugins.html`, `category.html`, `plugin-{slug}.html` × 10, `pcm-archive.css`, `pcm-plugin.css`, `assets/plugins/` |
 | Marketing | `pricing.html`, `support.html`, `docs.html`, `how-it-works.html`, `pcm-content.css` |
 | Account | `account.html`, `pcm-account.css`, `pcm-account.js` |
 | Auth | `sign-in.html`, `sign-up.html`, `reset-password.html`, `pcm-auth.css`, `pcm-auth.js` |

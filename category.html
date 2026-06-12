@@ -46,10 +46,9 @@
         "name": "Forms WordPress Plugins by ProCoders",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Connect CF7 to HubSpot", "url": "https://market.procoders.tech/plugins/connect-cf7-to-hubspot/" },
-          { "@type": "ListItem", "position": 2, "name": "FormCraft Elite", "url": "https://market.procoders.tech/categories/forms/" },
-          { "@type": "ListItem", "position": 3, "name": "FormLogic API", "url": "https://market.procoders.tech/categories/forms/" },
-          { "@type": "ListItem", "position": 4, "name": "SmartForms Lite", "url": "https://market.procoders.tech/categories/forms/" },
-          { "@type": "ListItem", "position": 5, "name": "Webhook Sync", "url": "https://market.procoders.tech/categories/forms/" }
+          { "@type": "ListItem", "position": 2, "name": "Connect Contact Form 7 to PipeDrive", "url": "https://market.procoders.tech/plugins/connect-cf7-to-pipedrive/" },
+          { "@type": "ListItem", "position": 3, "name": "Connect Contact Form 7 to Salesforce", "url": "https://market.procoders.tech/plugins/connect-cf7-to-salesforce/" },
+          { "@type": "ListItem", "position": 4, "name": "Connect Contact Form 7 to Zoho", "url": "https://market.procoders.tech/plugins/connect-cf7-to-zoho/" }
         ]
       }
     ]
@@ -64,6 +63,7 @@
   <link rel="stylesheet" href="pcm-shared.css">
   <link rel="stylesheet" href="pcm-archive.css">
   <script src="pcm-shared.js" defer></script>
+  <script src="pcm-catalog.js" defer></script>
   <script src="pcm-search.js" defer></script>
 </head>
 <body class="has-cookie-bar" data-auth="guest">
@@ -204,22 +204,22 @@
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a><span>/</span>
         <a href="plugins.html">Plugins</a><span>/</span>
-        <span class="breadcrumb__current">Forms</span>
+        <span class="breadcrumb__current" id="category-breadcrumb">Forms</span>
       </nav>
       <header class="archive-hero archive-hero--compact" data-od-id="category-hero">
         <div class="archive-intro archive-intro--compact">
           <div class="archive-intro__copy">
-            <h1>Forms WordPress Plugins by ProCoders</h1>
-            <p class="archive-intro__lede">First-party forms plugins for contact capture, CF7 integrations, CRM handoffs, and lead routing — built and supported by ProCoders engineers.</p>
+            <h1 id="category-title">Forms WordPress Plugins by ProCoders</h1>
+            <p class="archive-intro__lede" id="category-lede">First-party forms plugins for contact capture, CF7 integrations, CRM handoffs, and lead routing — built and supported by ProCoders engineers.</p>
           </div>
           <div class="archive-facts archive-facts--compact" aria-label="Category facts">
             <article class="archive-fact archive-fact--stat">
-              <span class="archive-fact__value">8</span>
-              <span class="archive-fact__label">Forms plugins</span>
+              <span class="archive-fact__value" id="category-count">4</span>
+              <span class="archive-fact__label" id="category-count-label">Forms plugins</span>
             </article>
             <article class="archive-fact">
-              <h2 class="archive-fact__title">CF7 + CRM</h2>
-              <p class="archive-fact__desc">HubSpot sync, MailChimp bridges, webhooks, and field-mapping tools for production stacks.</p>
+              <h2 class="archive-fact__title" id="category-fact-title">CF7 + CRM</h2>
+              <p class="archive-fact__desc" id="category-fact-desc">HubSpot, PipeDrive, Salesforce, and Zoho bridges for Contact Form 7.</p>
             </article>
             <article class="archive-fact">
               <h2 class="archive-fact__title">GPL source</h2>
@@ -230,14 +230,13 @@
       </header>
     </div>
     <div class="container archive-layout">
-      <aside class="archive-sidebar" aria-label="Subcategories">
-        <h3>Subcategories</h3>
-        <ul>
-          <li><a href="category.html" class="is-active">All Forms <span class="count">8</span></a></li>
-          <li><a href="category.html">Contact forms <span class="count">4</span></a></li>
-          <li><a href="category.html">CRM integrations <span class="count">3</span></a></li>
-          <li><a href="category.html">Lead capture <span class="count">2</span></a></li>
-          <li><a href="category.html">Surveys &amp; quizzes <span class="count">1</span></a></li>
+      <aside class="archive-sidebar" aria-label="Categories">
+        <h3>Categories</h3>
+        <ul id="category-nav">
+          <li><a href="category.html?cat=forms" data-cat="forms">Forms <span class="count">4</span></a></li>
+          <li><a href="category.html?cat=dev-tools" data-cat="dev-tools">Dev Tools <span class="count">3</span></a></li>
+          <li><a href="category.html?cat=seo" data-cat="seo">SEO <span class="count">1</span></a></li>
+          <li><a href="category.html?cat=ai" data-cat="ai">AI <span class="count">2</span></a></li>
         </ul>
       </aside>
       <div>
@@ -249,7 +248,7 @@
             <option>Newest</option>
             <option>Price: low to high</option>
           </select>
-          <input type="search" id="cat-search" placeholder="Search in Forms…" aria-label="Search in category">
+          <input type="search" id="cat-search" placeholder="Search in category…" aria-label="Search in category">
           <span class="filter-bar__spacer" aria-hidden="true"></span>
           <div class="filter-bar__view-toggle" role="group" aria-label="View layout">
             <button type="button" class="view-toggle-btn" id="view-grid" aria-label="Grid view" aria-pressed="true">
@@ -317,7 +316,7 @@
             <li><a href="docs.html">Documentation</a></li>
             <li><a href="support.html">Support center</a></li>
             <li><a href="docs.html#compatibility">Compatibility</a></li>
-            <li><a href="plugin.html#changelog">Changelog</a></li>
+            <li><a href="plugin-connect-cf7-to-hubspot.html#changelog">Changelog</a></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -386,16 +385,55 @@
     const starSvg = '<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
     const installSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>';
 
-    const FORMS_PLUGINS = [
-      { id: 'cf7hubspot', name: 'Connect CF7 to HubSpot', abbr: 'CF7', bg: 'icon-bg-1', rating: 5.0, reviews: 2, price: '$49', free: false, installs: '300+', category: 'Forms', featured: true, accent: 'plugin-card--accent-blue', href: 'plugin.html', excerpt: 'Sync Contact Form 7 submissions to HubSpot contacts and deals.' },
-      { id: 'formcraft', name: 'FormCraft Elite', abbr: 'FC', bg: 'icon-bg-2', rating: 4.9, reviews: 218, price: '$59', free: false, installs: '8k', category: 'Forms', featured: true, accent: 'plugin-card--accent-violet', href: 'plugins.html', excerpt: 'Advanced forms with conditional logic API and field validation hooks.' },
-      { id: 'formlogic', name: 'FormLogic API', abbr: 'FL', bg: 'icon-bg-5', rating: 4.7, reviews: 45, price: '$39', free: false, installs: '2k', category: 'Forms', featured: false, accent: '', href: 'plugins.html', excerpt: 'REST API layer for custom form endpoints and webhook routing.' },
-      { id: 'smartforms', name: 'SmartForms Lite', abbr: 'SF', bg: 'icon-bg-3', rating: 4.6, reviews: 89, price: null, free: true, installs: '5k', category: 'Forms', featured: false, accent: 'plugin-card--accent-green', href: 'plugins.html', excerpt: 'Drag-and-drop form builder with spam protection and email alerts.' },
-      { id: 'webhook', name: 'Webhook Sync', abbr: 'WS', bg: 'icon-bg-4', rating: 4.8, reviews: 34, price: '$29', free: false, installs: '1.2k', category: 'Integrations', featured: false, accent: '', href: 'plugins.html', excerpt: 'Push form submissions to any endpoint with retry and payload mapping.' },
-      { id: 'mailchimp', name: 'MailChimp Bridge', abbr: 'MC', bg: 'icon-bg-2', rating: 4.5, reviews: 67, price: null, free: true, installs: '3k', category: 'Integrations', featured: false, accent: 'plugin-card--accent-green', href: 'plugins.html', excerpt: 'Subscribe form users to MailChimp lists with double opt-in support.' },
-      { id: 'gravitypress', name: 'GravityPress', abbr: 'GP', bg: 'icon-bg-1', rating: 4.4, reviews: 112, price: '$45', free: false, installs: '900+', category: 'Membership', featured: false, accent: '', href: 'plugins.html', excerpt: 'Connect Gravity Forms entries to membership roles and content gates.' },
-      { id: 'quizroute', name: 'QuizRoute', abbr: 'QR', bg: 'icon-bg-5', rating: 4.3, reviews: 28, price: '$25', free: false, installs: '600+', category: 'Lead Gen', featured: false, accent: '', href: 'plugins.html', excerpt: 'Interactive quizzes with scored outcomes and CRM lead routing.' },
-    ];
+    let FORMS_PLUGINS = [];
+
+    var CATEGORY_PAGES = {
+      forms: {
+        name: 'Forms',
+        lede: 'First-party forms plugins for contact capture, CF7 integrations, CRM handoffs, and lead routing — built and supported by ProCoders engineers.',
+        factTitle: 'CF7 + CRM',
+        factDesc: 'HubSpot, PipeDrive, Salesforce, and Zoho bridges for Contact Form 7.'
+      },
+      'dev-tools': {
+        name: 'Dev Tools',
+        lede: 'Developer-focused WordPress plugins — Gutenberg blocks, ACF field types, and starter scaffolds from the ProCoders engineering team.',
+        factTitle: 'Ship faster',
+        factDesc: 'Blocks, icons, and boilerplate maintained for production WordPress stacks.'
+      },
+      seo: {
+        name: 'SEO',
+        lede: 'SEO utilities from ProCoders — markdown-first content workflows and search-friendly publishing tools.',
+        factTitle: 'Content-first',
+        factDesc: 'Singular Markdown and related tools for clean, indexable WordPress output.'
+      },
+      ai: {
+        name: 'AI',
+        lede: 'AI-powered WordPress plugins — semantic search and LLM integrations built and supported by ProCoders.',
+        factTitle: 'On-site AI',
+        factDesc: 'BrainySearch and OmniMind for search and assistant workflows inside WordPress.'
+      }
+    };
+
+    function getCategorySlug() {
+      var params = new URLSearchParams(window.location.search);
+      var cat = (params.get('cat') || 'forms').toLowerCase();
+      return CATEGORY_PAGES[cat] ? cat : 'forms';
+    }
+
+    function applyCategoryMeta(slug, count) {
+      var meta = CATEGORY_PAGES[slug];
+      document.getElementById('category-breadcrumb').textContent = meta.name;
+      document.getElementById('category-title').textContent = meta.name + ' WordPress Plugins by ProCoders';
+      document.getElementById('category-lede').textContent = meta.lede;
+      document.getElementById('category-count').textContent = String(count);
+      document.getElementById('category-count-label').textContent = meta.name + ' plugins';
+      document.getElementById('category-fact-title').textContent = meta.factTitle;
+      document.getElementById('category-fact-desc').textContent = meta.factDesc;
+      document.title = meta.name + ' WordPress Plugins — ProCoders Market';
+      document.querySelectorAll('#category-nav a').forEach(function (link) {
+        link.classList.toggle('is-active', link.dataset.cat === slug);
+      });
+    }
 
     function renderPluginCard(p, layout) {
       const stars = Array(5).fill(starSvg).join('');
@@ -405,6 +443,8 @@
       const featuredBadge = p.featured ? '<span class="badge badge--featured">Team pick</span>' : '';
       const layoutClass = layout === 'list' ? ' plugin-card--list' : ' plugin-card--grid';
       const accent = p.accent ? ' ' + p.accent : '';
+      const ratingDisplay = p.rating > 0 ? p.rating : '—';
+      const installsDisplay = p.installs || '—';
 
       if (layout === 'grid') {
         const categoryTag = p.category
@@ -426,8 +466,8 @@
               <div class="plugin-card__meta">
                 <h3>${p.name}</h3>
                 <div class="plugin-card__stats">
-                  <span class="plugin-card__stat plugin-card__stat--rating">${starSvg} ${p.rating}</span>
-                  <span class="plugin-card__stat plugin-card__stat--installs">${installSvg} ${p.installs}</span>
+                  <span class="plugin-card__stat plugin-card__stat--rating">${starSvg} ${ratingDisplay}</span>
+                  <span class="plugin-card__stat plugin-card__stat--installs">${installSvg} ${installsDisplay}</span>
                   ${priceStat}
                 </div>
               </div>
@@ -446,8 +486,8 @@
       const categoryInline = `<span class="plugin-card__category-inline">${p.category}</span>`;
       const ratingBlock = `<div class="plugin-card__rating">
             <span class="stars" aria-label="${p.rating} stars">${stars}</span>
-            <span class="plugin-card__rating-value">${p.rating} (${p.reviews})</span>
-            <span class="plugin-card__installs-inline">· ${p.installs} installs</span>
+            <span class="plugin-card__rating-value">${ratingDisplay} (${p.reviews})</span>
+            <span class="plugin-card__installs-inline">· ${installsDisplay} installs</span>
             ${categoryInline}
           </div>`;
 
@@ -514,7 +554,14 @@
 
     viewGridBtn.addEventListener('click', () => setView('grid'));
     viewListBtn.addEventListener('click', () => setView('list'));
-    setView(currentView);
+
+    PCMCatalog.load().then(function (catalog) {
+      var slug = getCategorySlug();
+      var categoryName = CATEGORY_PAGES[slug].name;
+      FORMS_PLUGINS = catalog.filter(function (p) { return p.category === categoryName; });
+      applyCategoryMeta(slug, FORMS_PLUGINS.length);
+      setView(currentView);
+    });
 
     document.getElementById('load-more').addEventListener('click', function() {
       this.textContent = 'All plugins loaded';

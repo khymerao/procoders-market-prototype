@@ -1,4 +1,4 @@
-/* Plugin detail page — plugin.html */
+/* Plugin detail pages — plugin-{slug}.html */
 
 h1 { font-size: clamp(28px, 4vw, 40px); line-height: 1.15; letter-spacing: -0.02em; }
 h2 { font-size: clamp(22px, 3vw, 28px); line-height: 1.2; letter-spacing: -0.01em; }
@@ -23,15 +23,59 @@ h3 { font-size: 18px; font-weight: 600; color: var(--fg); margin-bottom: 12px; }
   overflow: hidden;
 }
 .plugin-banner::after {
-  content: 'CF7 ↔ HubSpot';
-  position: absolute;
-  right: 32px;
-  bottom: 24px;
-  font-family: var(--font-mono);
-  font-size: clamp(18px, 3vw, 28px);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.15);
+  content: none;
+}
+
+/* Per-slug hero banners — image with gradient fallback */
+.plugin-banner[data-slug="connect-cf7-to-hubspot"] {
+  background-image: url('assets/plugins/connect-cf7-to-hubspot/hero-1280x720.webp');
+  background-size: cover;
+  background-position: center;
+}
+.plugin-banner[data-slug="connect-cf7-to-pipedrive"] {
+  background-image: url('assets/plugins/connect-cf7-to-pipedrive/hero-1280x720.webp');
+  background-size: cover;
+  background-position: center;
+}
+.plugin-banner[data-slug="connect-cf7-to-salesforce"] {
+  background-image: url('assets/plugins/connect-cf7-to-salesforce/hero-1280x720.webp');
+  background-size: cover;
+  background-position: center;
+}
+.plugin-banner[data-slug="connect-cf7-to-zoho"] {
+  background-image: url('assets/plugins/connect-cf7-to-zoho/hero-1280x720.webp');
+  background-size: cover;
+  background-position: center;
+}
+.plugin-banner[data-slug="brainy-search"] {
+  background-image: url('assets/plugins/brainy-search/hero-1280x720.webp');
+  background-size: cover;
+  background-position: center;
+}
+.plugin-banner[data-slug="omnimind"] {
+  background-image: url('assets/plugins/omnimind/hero-1280x720.webp');
+  background-size: cover;
+  background-position: center;
+}
+.plugin-banner[data-slug="singular-markdown"] {
+  background-image: url('assets/plugins/singular-markdown/hero-1280x720.webp');
+  background-size: cover;
+  background-position: center;
+}
+.plugin-banner[data-slug="plugin-procoders-gutenberg-blocks"] {
+  background-image: url('assets/plugins/plugin-procoders-gutenberg-blocks/hero-1280x720.webp');
+  background-size: cover;
+  background-position: center;
+}
+.plugin-banner[data-slug="acf-svg-icon"] {
+  background-image: url('assets/plugins/acf-svg-icon/hero-1280x720.webp');
+  background-size: cover;
+  background-position: center;
+}
+.plugin-banner[data-slug="wp-starter"] {
+  background-image: url('assets/plugins/wp-starter/hero-1280x720.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 .plugin-header {

@@ -71,6 +71,7 @@
   <link rel="stylesheet" href="pcm-shared.css">
   <link rel="stylesheet" href="pcm-home.css">
   <script src="pcm-shared.js" defer></script>
+  <script src="pcm-catalog.js" defer></script>
   <script src="pcm-search.js" defer></script>
 </head>
 <body class="has-cookie-bar" data-auth="guest">
@@ -257,14 +258,7 @@
                 <path d="M240 120 C280 100, 320 180, 260 220" stroke="rgba(96,22,252,0.18)" stroke-width="1" stroke-dasharray="3 5"/>
                 <path d="M80 140 C140 120, 200 200, 160 260" stroke="rgba(102,255,163,0.15)" stroke-width="1" stroke-dasharray="3 5"/>
               </svg>
-              <div class="hero-visual__chips" id="hero-visual-chips">
-                <div class="hero-visual__chip hero-visual__chip--blue hero-visual__chip--layout-0 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-1">CF7</span><span class="hero-visual__chip-label">Connect CF7 to HubSpot</span></div>
-                <div class="hero-visual__chip hero-visual__chip--violet hero-visual__chip--layout-1 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-2">FC</span><span class="hero-visual__chip-label">FormCraft Elite</span></div>
-                <div class="hero-visual__chip hero-visual__chip--green hero-visual__chip--layout-2 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-3">SG</span><span class="hero-visual__chip-label">ShieldGate Security</span></div>
-                <div class="hero-visual__chip hero-visual__chip--violet hero-visual__chip--layout-3 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-2">MS</span><span class="hero-visual__chip-label">MemberStack Pro</span></div>
-                <div class="hero-visual__chip hero-visual__chip--blue hero-visual__chip--layout-4 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-1">DK</span><span class="hero-visual__chip-label">DevKit CLI</span></div>
-                <div class="hero-visual__chip hero-visual__chip--blue hero-visual__chip--layout-5 hero-visual__chip--placeholder" aria-hidden="true"><span class="hero-visual__chip-icon icon-bg-1">EC</span><span class="hero-visual__chip-label">EdgeCache CDN</span></div>
-              </div>
+              <div class="hero-visual__chips" id="hero-visual-chips" aria-hidden="true"></div>
             </div>
           </div>
         </div>
@@ -277,42 +271,26 @@
         <div class="section__head">
           <div>
             <h2>Browse by category</h2>
-            <p class="section__lede">Eight categories, one catalog — all maintained by ProCoders.</p>
+            <p class="section__lede">Four categories, ten plugins — all maintained by ProCoders.</p>
           </div>
           <a href="plugins.html" class="section__link">View all plugins →</a>
         </div>
         <div class="category-grid">
-          <a href="category.html" class="category-tile">
-            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 14h4l2 12h12l3-12H14"/><circle cx="17" cy="30" r="2"/><circle cx="27" cy="30" r="2"/></svg>
-            <div class="category-tile__text"><div class="category-tile__name">E-commerce</div><div class="category-tile__count">6 plugins</div></div>
-          </a>
-          <a href="category.html" class="category-tile">
-            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="18" r="10"/><path d="M26 26l8 8"/></svg>
-            <div class="category-tile__text"><div class="category-tile__name">SEO</div><div class="category-tile__count">4 plugins</div></div>
-          </a>
-          <a href="category.html" class="category-tile">
-            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 8l-8 4v8c0 6 8 12 8 12s8-6 8-12v-8l-8-4z"/></svg>
-            <div class="category-tile__text"><div class="category-tile__name">Security</div><div class="category-tile__count">3 plugins</div></div>
-          </a>
-          <a href="category.html" class="category-tile">
-            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 8L12 24h8l-2 10 12-20h-8l2-6z"/></svg>
-            <div class="category-tile__text"><div class="category-tile__name">Performance</div><div class="category-tile__count">5 plugins</div></div>
-          </a>
-          <a href="category.html" class="category-tile">
+          <a href="category.html?cat=forms" class="category-tile">
             <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="8" width="24" height="24" rx="2"/><path d="M14 20h12M14 16h8M14 24h10"/></svg>
-            <div class="category-tile__text"><div class="category-tile__name">Forms</div><div class="category-tile__count">8 plugins</div></div>
+            <div class="category-tile__text"><div class="category-tile__name">Forms</div><div class="category-tile__count">4 plugins</div></div>
           </a>
-          <a href="category.html" class="category-tile">
-            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="14" r="6"/><path d="M8 32c0-6 5-10 12-10s12 4 12 10"/></svg>
-            <div class="category-tile__text"><div class="category-tile__name">Membership</div><div class="category-tile__count">2 plugins</div></div>
-          </a>
-          <a href="category.html" class="category-tile">
-            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="22" width="8" height="12"/><rect x="16" y="14" width="8" height="20"/><rect x="26" y="8" width="8" height="26"/></svg>
-            <div class="category-tile__text"><div class="category-tile__name">Analytics</div><div class="category-tile__count">2 plugins</div></div>
-          </a>
-          <a href="category.html" class="category-tile">
+          <a href="category.html?cat=dev-tools" class="category-tile">
             <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="28" height="24" rx="2"/><path d="M12 18l4 4-4 4"/><path d="M20 26h8"/></svg>
-            <div class="category-tile__text"><div class="category-tile__name">Dev Tools</div><div class="category-tile__count">4 plugins</div></div>
+            <div class="category-tile__text"><div class="category-tile__name">Dev Tools</div><div class="category-tile__count">3 plugins</div></div>
+          </a>
+          <a href="category.html?cat=seo" class="category-tile">
+            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="18" r="10"/><path d="M26 26l8 8"/></svg>
+            <div class="category-tile__text"><div class="category-tile__name">SEO</div><div class="category-tile__count">1 plugin</div></div>
+          </a>
+          <a href="category.html?cat=ai" class="category-tile">
+            <svg class="category-tile__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="16" r="6"/><path d="M12 30h16M16 30v-4M24 30v-4"/></svg>
+            <div class="category-tile__text"><div class="category-tile__name">AI</div><div class="category-tile__count">2 plugins</div></div>
           </a>
         </div>
       </div>
@@ -487,7 +465,7 @@
               <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
             <p class="review-card__quote">"HubSpot sync was straightforward to map on a client site. Source was readable enough to extend without a fork."</p>
-            <p class="review-card__plugin">Purchased <a href="plugin.html">Connect CF7 to HubSpot</a></p>
+            <p class="review-card__plugin">Purchased <a href="plugin-connect-cf7-to-hubspot.html">Connect CF7 to HubSpot</a></p>
           </article>
           <article class="review-card">
             <div class="review-card__head">
@@ -504,8 +482,8 @@
               <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
-            <p class="review-card__quote">"GPL source included as documented. ShieldGate replaced several security plugins across my client sites."</p>
-            <p class="review-card__plugin">Using <a href="plugins.html">ShieldGate Security</a></p>
+            <p class="review-card__quote">"PipeDrive sync just works — field mapping took minutes on a client CRM migration."</p>
+            <p class="review-card__plugin">Using <a href="plugin-connect-cf7-to-pipedrive.html">Connect CF7 to PipeDrive</a></p>
           </article>
           <article class="review-card">
             <div class="review-card__head">
@@ -522,8 +500,8 @@
               <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
-            <p class="review-card__quote">"FormCraft Elite's conditional logic API saved us a custom build. ProCoders support answered a hook question within a business day."</p>
-            <p class="review-card__plugin">Purchased <a href="plugins.html">FormCraft Elite</a></p>
+            <p class="review-card__quote">"Singular Markdown gave us clean .md URLs for docs without a theme rewrite."</p>
+            <p class="review-card__plugin">Using <a href="plugin-singular-markdown.html">Singular Markdown</a></p>
           </article>
         </div>
       </div>
@@ -605,7 +583,7 @@
             <li><a href="docs.html">Documentation</a></li>
             <li><a href="support.html">Support center</a></li>
             <li><a href="docs.html#compatibility">Compatibility</a></li>
-            <li><a href="plugin.html#changelog">Changelog</a></li>
+            <li><a href="plugin-connect-cf7-to-hubspot.html#changelog">Changelog</a></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -629,22 +607,11 @@
   </footer>
 
   <script>
-    const PLUGINS = [
-      { id: 'cf7hubspot', name: 'Connect CF7 to HubSpot', abbr: 'CF7', bg: 'icon-bg-1', rating: 5.0, reviews: 2, price: '$49', free: false, installs: '300+', category: 'Forms', featured: true, accent: 'plugin-card--accent-blue', excerpt: 'Sync Contact Form 7 submissions to HubSpot contacts and deals.' },
-      { id: 'formcraft', name: 'FormCraft Elite', abbr: 'FC', bg: 'icon-bg-2', rating: 4.9, reviews: 218, price: '$59', free: false, installs: '8k', category: 'Forms', featured: true, accent: 'plugin-card--accent-violet', excerpt: 'Advanced forms with conditional logic API and field validation hooks.' },
-      { id: 'seopulse', name: 'SEO Pulse', abbr: 'SP', bg: 'icon-bg-5', rating: 4.7, reviews: 156, price: '$29', free: false, installs: '6k', category: 'SEO', featured: false, accent: '', excerpt: 'Real-time SEO scoring and schema markup for posts and pages.' },
-      { id: 'shieldgate', name: 'ShieldGate Security', abbr: 'SG', bg: 'icon-bg-3', rating: 4.8, reviews: 891, price: null, free: true, installs: '18k', category: 'Security', featured: true, accent: 'plugin-card--accent-green', excerpt: 'Firewall, malware scan, and login hardening for production sites.' },
-      { id: 'webpilot', name: 'WebPilot Analytics', abbr: 'WP', bg: 'icon-bg-4', rating: 4.6, reviews: 94, price: '$39', free: false, installs: '4k', category: 'Analytics', featured: false, accent: '', excerpt: 'Privacy-first analytics dashboard with custom event tracking.' },
-      { id: 'memberstack', name: 'MemberStack Pro', abbr: 'MS', bg: 'icon-bg-2', rating: 4.8, reviews: 203, price: '$79', free: false, installs: '5k', category: 'Membership', featured: true, accent: 'plugin-card--accent-violet', excerpt: 'Membership tiers, gated content, and subscription billing for WP.' },
-      { id: 'devkit', name: 'DevKit CLI', abbr: 'DK', bg: 'icon-bg-1', rating: 4.9, reviews: 67, price: null, free: true, installs: '9k', category: 'Dev Tools', featured: true, accent: 'plugin-card--accent-blue', excerpt: 'WP-CLI extensions and local dev helpers for plugin authors.' },
-      { id: 'cartflow', name: 'CartFlow Boost', abbr: 'CB', bg: 'icon-bg-4', rating: 4.5, reviews: 112, price: '$45', free: false, installs: '3k', category: 'E-commerce', featured: false, accent: '', excerpt: 'Checkout funnel optimization and abandoned cart recovery for WooCommerce.' },
-      { id: 'edgecache', name: 'EdgeCache CDN', abbr: 'EC', bg: 'icon-bg-1', rating: 4.8, reviews: 124, price: '$39', free: false, installs: '7k', category: 'Performance', featured: true, accent: 'plugin-card--accent-blue', excerpt: 'Edge caching and CDN purge hooks for high-traffic WordPress sites.' },
-      { id: 'minifypro', name: 'MinifyPro', abbr: 'MP', bg: 'icon-bg-5', rating: 4.7, reviews: 88, price: '$29', free: false, installs: '5k', category: 'Performance', featured: false, accent: '', excerpt: 'CSS/JS minification and critical path optimization for Core Web Vitals.' },
-    ];
+    let PLUGINS = [];
+    let trending = [];
 
     const starSvg = '<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
     const installSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>';
-
 
     function heroChipAccent(accent) {
       if (accent && accent.includes('violet')) return 'hero-visual__chip--violet';
@@ -660,15 +627,13 @@
     function renderHeroCloud() {
       const chipsEl = document.getElementById('hero-visual-chips');
       if (!chipsEl) return;
-      const featured = PLUGINS.filter(p => p.featured).slice(0, 6);
+      const featured = PLUGINS.filter(p => p.featured).slice(0, 3);
       chipsEl.classList.add('is-hydrated');
       chipsEl.innerHTML = featured.map((p, i) => {
         const layoutClass = `hero-visual__chip--layout-${i}`;
         return `<div class="hero-visual__chip ${heroChipAccent(p.accent)} ${layoutClass}"><span class="hero-visual__chip-icon ${p.bg}">${p.abbr}</span><span class="hero-visual__chip-label">${p.name}</span></div>`;
       }).join('');
     }
-
-    renderHeroCloud();
 
     function renderPluginCard(p, compact, opts = {}) {
       const stars = Array(5).fill(starSvg).join('');
@@ -682,7 +647,9 @@
       const layoutClass = layout === 'list' ? ' plugin-card--list' : ' plugin-card--grid';
       const compactClass = compact ? ' plugin-card--compact' : '';
       const accent = p.accent ? ' ' + p.accent : '';
-      const href = p.id === 'cf7hubspot' ? 'plugin.html' : 'plugins.html';
+      const href = p.href;
+      const ratingDisplay = p.rating > 0 ? p.rating : '—';
+      const installsDisplay = p.installs || '—';
 
       if (layout === 'grid') {
         const categoryTag = p.category
@@ -703,8 +670,8 @@
             <div class="plugin-card__meta">
               <h5>${p.name}</h5>
               <div class="plugin-card__stats">
-                <span class="plugin-card__stat plugin-card__stat--rating">${starSvg} ${p.rating}</span>
-                <span class="plugin-card__stat plugin-card__stat--installs">${installSvg} ${p.installs}</span>
+                <span class="plugin-card__stat plugin-card__stat--rating">${starSvg} ${ratingDisplay}</span>
+                <span class="plugin-card__stat plugin-card__stat--installs">${installSvg} ${installsDisplay}</span>
                 ${priceStat}
               </div>
             </div>
@@ -721,8 +688,8 @@
       const titleRowBadge = (p.featured && !opts.hideFeatured) ? featuredBadge : '';
       const ratingBlock = `<div class="plugin-card__rating">
             <span class="stars" aria-label="${p.rating} stars">${stars}</span>
-            <span class="plugin-card__rating-value">${p.rating} (${p.reviews})</span>
-            <span class="plugin-card__installs-inline">· ${p.installs} installs</span>
+            <span class="plugin-card__rating-value">${ratingDisplay} (${p.reviews})</span>
+            <span class="plugin-card__installs-inline">· ${installsDisplay} installs</span>
           </div>`;
 
       return `
@@ -740,7 +707,7 @@
           </div>
           <div class="plugin-card__footer">
             ${priceBadge}
-            <span class="plugin-card__installs caption">${p.installs} installs</span>
+            <span class="plugin-card__installs caption">${installsDisplay} installs</span>
           </div>
           <div class="plugin-card__actions">
             ${priceBadge}
@@ -749,28 +716,36 @@
         </a>`;
     }
 
-    const featuredGrid = document.getElementById('featured-grid');
-    featuredGrid.innerHTML = PLUGINS.filter(p => p.featured).slice(0, 6).map(p => renderPluginCard(p)).join('');
-    clearGridSkeleton(featuredGrid);
+    function hydrateCatalogGrids() {
+      renderHeroCloud();
 
-    const brandFlagshipIds = ['cf7hubspot', 'shieldgate', 'formcraft'];
-    const brandPlugins = document.getElementById('brand-plugins');
-    brandPlugins.innerHTML = brandFlagshipIds
-      .map(id => PLUGINS.find(p => p.id === id))
-      .filter(Boolean)
-      .map(p => renderPluginCard(p, true, { hideFeatured: true }))
-      .join('');
-    clearGridSkeleton(brandPlugins);
+      const featuredGrid = document.getElementById('featured-grid');
+      featuredGrid.innerHTML = PLUGINS.filter(p => p.featured).map(p => renderPluginCard(p)).join('');
+      clearGridSkeleton(featuredGrid);
 
-    const newGrid = document.getElementById('new-grid');
-    newGrid.innerHTML = PLUGINS.slice(-4).map(p => renderPluginCard(p, true)).join('');
-    clearGridSkeleton(newGrid);
+      const brandFlagshipSlugs = ['connect-cf7-to-hubspot', 'connect-cf7-to-pipedrive', 'singular-markdown'];
+      const brandPlugins = document.getElementById('brand-plugins');
+      brandPlugins.innerHTML = brandFlagshipSlugs
+        .map(slug => PLUGINS.find(p => p.slug === slug))
+        .filter(Boolean)
+        .map(p => renderPluginCard(p, true, { hideFeatured: true }))
+        .join('');
+      clearGridSkeleton(brandPlugins);
 
-    const trending = PLUGINS.slice(0, 6);
-    const track = document.getElementById('carousel-track');
-    const trackWrap = document.querySelector('.carousel__track-wrap');
-    track.innerHTML = trending.map(p => renderPluginCard(p)).join('');
-    clearGridSkeleton(trackWrap);
+      const newGrid = document.getElementById('new-grid');
+      const newItems = PLUGINS.filter(p => p.isNew);
+      newGrid.innerHTML = (newItems.length ? newItems : PLUGINS.slice(-3)).map(p => renderPluginCard(p, true)).join('');
+      clearGridSkeleton(newGrid);
+
+      trending = PLUGINS.slice(0, 6);
+      const track = document.getElementById('carousel-track');
+      const trackWrap = document.querySelector('.carousel__track-wrap');
+      track.innerHTML = trending.map(p => renderPluginCard(p)).join('');
+      clearGridSkeleton(trackWrap);
+      slideIndex = 0;
+      rebuildDots();
+      goTo(0);
+    }
 
     let slideIndex = 0;
     const dotsEl = document.getElementById('carousel-dots');
@@ -791,8 +766,6 @@
       }
     }
 
-    rebuildDots();
-
     function getVisible() {
       if (window.innerWidth <= 767) return 1;
       if (window.innerWidth <= 991) return 2;
@@ -800,6 +773,8 @@
     }
 
     function goTo(index) {
+      const track = document.getElementById('carousel-track');
+      if (!track) return;
       const visible = getVisible();
       const maxIndex = slideCount() - 1;
       slideIndex = Math.max(0, Math.min(index, maxIndex));
@@ -811,6 +786,13 @@
         d.classList.toggle('is-active', i === slideIndex);
       });
     }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      PCMCatalog.load().then(function (catalog) {
+        PLUGINS = catalog;
+        hydrateCatalogGrids();
+      });
+    });
 
     document.getElementById('carousel-prev').addEventListener('click', () => goTo(slideIndex - 1));
     document.getElementById('carousel-next').addEventListener('click', () => goTo(slideIndex + 1));
@@ -828,17 +810,20 @@
     /* Carousel touch swipe */
     let touchStartX = 0;
     let touchEndX = 0;
-    trackWrap.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    }, { passive: true });
-    trackWrap.addEventListener('touchend', (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      const diff = touchStartX - touchEndX;
-      if (Math.abs(diff) > 50) {
-        if (diff > 0) goTo(slideIndex + 1);
-        else goTo(slideIndex - 1);
-      }
-    }, { passive: true });
+    const trackWrap = document.querySelector('.carousel__track-wrap');
+    if (trackWrap) {
+      trackWrap.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+      trackWrap.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) {
+          if (diff > 0) goTo(slideIndex + 1);
+          else goTo(slideIndex - 1);
+        }
+      }, { passive: true });
+    }
 
 
     /* Hero category select */
