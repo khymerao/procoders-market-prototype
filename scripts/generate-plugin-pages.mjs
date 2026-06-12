@@ -132,6 +132,159 @@ function buildMetaCard(p) {
         </div>${ratingBlock}`;
 }
 
+const SCREENSHOT_FRAME = `<figure>
+              <div class="screenshot-frame"><div class="screenshot-frame__bar screenshot-frame__bar--accent"></div><div class="screenshot-frame__bar screenshot-frame__bar--w70"></div><div class="screenshot-frame__body"><div class="screenshot-frame__panel"></div><div class="screenshot-frame__panel"></div></div></div>
+              <figcaption class="screenshot-frame__caption">CAPTION</figcaption>
+            </figure>`;
+
+function crmFromSlug(slug) {
+  const map = {
+    'connect-cf7-to-hubspot': 'HubSpot',
+    'connect-cf7-to-pipedrive': 'PipeDrive',
+    'connect-cf7-to-salesforce': 'Salesforce',
+    'connect-cf7-to-zoho': 'Zoho'
+  };
+  return map[slug] || null;
+}
+
+function buildScreenshots(p) {
+  const crm = crmFromSlug(p.slug);
+  let captions;
+
+  if (crm) {
+    captions = [
+      `${crm} API credentials and connection status`,
+      'Contact Form 7 forms list — integrated forms highlighted',
+      `Field mapping — map CF7 fields to ${crm} properties`,
+      `API error log and sync notifications for ${crm}`
+    ];
+  } else if (p.slug === 'singular-markdown') {
+    captions = [
+      'Settings — content selectors and cache options',
+      'Singular Markdown meta box in the post editor',
+      'Public .md URL served from cache',
+      'Background regeneration queue status'
+    ];
+  } else if (p.slug === 'wp-starter') {
+    captions = [
+      'Starter theme file structure and build scripts',
+      'Tailwind and Vite dev workflow',
+      'Block patterns and template parts',
+      'Production build output'
+    ];
+  } else if (p.slug === 'acf-svg-icon') {
+    captions = [
+      'ACF field type — SVG icon picker',
+      'Icon library browser in the editor',
+      'Selected icon preview on the front end',
+      'Field group configuration'
+    ];
+  } else if (p.slug === 'plugin-procoders-gutenberg-blocks') {
+    captions = [
+      'ProCoders block library in the inserter',
+      'Block inspector controls and variants',
+      'Front-end rendering of layout blocks',
+      'Pattern library preview'
+    ];
+  } else if (p.slug === 'brainy-search') {
+    captions = [
+      'Search settings and index configuration',
+      'Live search results on the front end',
+      'Synonym and weighting rules',
+      'Search analytics dashboard'
+    ];
+  } else if (p.slug === 'omnimind') {
+    captions = [
+      'OmniMind assistant widget settings',
+      'Chat interface embedded on a page',
+      'Knowledge base and content sources',
+      'Conversation history and analytics'
+    ];
+  } else {
+    captions = [
+      `${p.name} admin settings`,
+      'Configuration and field mapping',
+      'Front-end integration preview',
+      'Logs and status notifications'
+    ];
+  }
+
+  const figures = captions
+    .map((c) => SCREENSHOT_FRAME.replace('CAPTION', esc(c)))
+    .join('\n            ');
+
+  return `<section id="screenshots" data-od-id="screenshots">
+          <h2>Plugin Screenshots and Admin Screens</h2>
+          <div class="screenshot-grid">
+            ${figures}
+          </div>
+        </section>`;
+}
+
+function buildInstallation(p) {
+  const crm = crmFromSlug(p.slug);
+  let steps;
+  let extra = '';
+
+  if (p.slug === 'connect-cf7-to-hubspot') {
+    steps = [
+      'Download the plugin from WordPress.org (or ProCoders Market for Pro) and unzip the archive.',
+      `Upload the <code class="mono">${p.slug}</code> folder to your <code class="mono">/wp-content/plugins/</code> directory.`,
+      'Activate the plugin through the Plugins menu in WordPress.',
+      'Navigate to the plugin settings page and follow the on-screen instructions to connect your HubSpot private app token.'
+    ];
+    extra = `<h3>WordPress Multisite</h3>
+          <div class="prose"><p>Upload and install via Network Admin → Plugins → Add New. Do not network-activate — activate on a per-site basis for precise control.</p></div>`;
+  } else if (crm) {
+    steps = [
+      `Install from <a href="${p.sourceUrl}" target="_blank" rel="noopener">WordPress.org</a> or upload the ZIP via Plugins → Add New.`,
+      `Upload the <code class="mono">${p.slug}</code> folder to <code class="mono">/wp-content/plugins/</code> if installing manually.`,
+      'Activate the plugin and ensure Contact Form 7 is installed and active.',
+      `Open the plugin settings and connect your ${crm} API credentials, then map your CF7 form fields.`
+    ];
+    extra = `<h3>Requirements</h3>
+          <div class="prose"><p>Requires WordPress ${p.testedUpTo ? '6.0+' : '6.0+'}, PHP ${p.requiresPhp || '7.4+'}, and an active Contact Form 7 installation.</p></div>`;
+  } else if (p.slug === 'singular-markdown') {
+    steps = [
+      `Clone or download from <a href="${p.githubUrl}" target="_blank" rel="noopener">GitHub</a> and place the plugin folder in <code class="mono">/wp-content/plugins/</code>.`,
+      'Activate <strong>Singular Markdown</strong> under Plugins.',
+      'Open <strong>Settings → Singular Markdown</strong> to configure eligible post types, selectors, and cache options.',
+      'Visit <strong>Settings → Permalinks</strong> and click <strong>Save</strong> once to flush rewrite rules so <code class="mono">.md</code> URLs work.'
+    ];
+  } else if (p.slug === 'wp-starter') {
+    steps = [
+      `Clone <a href="${p.githubUrl}" target="_blank" rel="noopener">wp-starter</a> into <code class="mono">/wp-content/themes/wp-starter</code>.`,
+      'Run <code class="mono">npm install</code> and <code class="mono">npm run dev</code> (or <code class="mono">npm run build</code> for production) in the theme directory.',
+      'Activate the theme under Appearance → Themes.',
+      'Configure <code class="mono">theme.json</code>, templates, and block patterns to match your project.'
+    ];
+  } else if (p.source === 'github') {
+    steps = [
+      `Download or clone from <a href="${p.githubUrl}" target="_blank" rel="noopener">GitHub</a>.`,
+      `Upload the plugin folder to <code class="mono">/wp-content/plugins/</code> (folder name matches the repository).`,
+      `Activate <strong>${esc(p.name)}</strong> in WordPress.`,
+      'Follow the README in the repository for field setup, blocks, or ACF configuration.'
+    ];
+  } else {
+    steps = [
+      `Install from <a href="${p.sourceUrl}" target="_blank" rel="noopener">WordPress.org</a> or upload the plugin ZIP.`,
+      `Place the <code class="mono">${p.slug}</code> folder in <code class="mono">/wp-content/plugins/</code>.`,
+      `Activate <strong>${esc(p.name)}</strong> under Plugins.`,
+      'Open the plugin settings page and complete the on-screen setup wizard.'
+    ];
+  }
+
+  const list = steps.map((s) => `<li>${s}</li>`).join('\n            ');
+
+  return `<section id="installation" data-od-id="installation">
+          <h2>Installation</h2>
+          <ol class="steps-list">
+            ${list}
+          </ol>
+          ${extra}
+        </section>`;
+}
+
 function buildJsonLd(p) {
   const url = `https://market.procoders.tech/plugins/${p.slug}/`;
   const desc = decodeHtml(p.excerpt).slice(0, 200);
@@ -314,6 +467,9 @@ function generatePage(p) {
     if (!cta.hasCheckout) {
       html = html.replace(/<div class="checkout-overlay"[\s\S]*?<\/div>\s*\n\s*<!-- 12\. Footer -->/, '<!-- 12. Footer -->');
     }
+
+    html = html.replace(/<section id="screenshots"[\s\S]*?<\/section>/, buildScreenshots(p));
+    html = html.replace(/<section id="installation"[\s\S]*?<\/section>/, buildInstallation(p));
   }
 
   html = html.replace(

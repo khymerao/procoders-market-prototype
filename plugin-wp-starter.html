@@ -268,7 +268,7 @@
         <section id="overview" data-od-id="overview">
           <h2>What WP Starter Does</h2>
           <div class="prose">
-            <p>st-wp-starter === Hi. I'm a starter theme called st-wp-starter. I'm here to be turned into a</p>
+            <p>Connect CF7 to HubSpot by ProCoders is a powerful plugin that connects WordPress Contact Form 7 directly with your HubSpot account, automating your workflow and enhancing lead management. With this plugin, every submission from Contact Form 7 is instantly and securely synced with HubSpot, allowing you to manage contacts, track submissions, and engage with your audience without manual data entry. Third-Party Service Integration: This plugin integrates with HubSpot, a third-party service, to manage and sync data from Contact Form 7 submissions. By using this plugin, data collected through Contact Form 7 will be sent to HubSpot for processing and storage. Please be aware that by using this plugin, you agree to the terms of service and privacy policy of HubSpot. This plugin interacts with the </p>
             <h3>Overview</h3>
             <p>st-wp-starter === Hi. I'm a starter theme called st-wp-starter. I'm here to be turned into a</p>
           </div>
@@ -279,19 +279,19 @@
           <div class="screenshot-grid">
             <figure>
               <div class="screenshot-frame"><div class="screenshot-frame__bar screenshot-frame__bar--accent"></div><div class="screenshot-frame__bar screenshot-frame__bar--w70"></div><div class="screenshot-frame__body"><div class="screenshot-frame__panel"></div><div class="screenshot-frame__panel"></div></div></div>
-              <figcaption class="screenshot-frame__caption">HubSpot token settings and API error notifications</figcaption>
+              <figcaption class="screenshot-frame__caption">Starter theme file structure and build scripts</figcaption>
             </figure>
             <figure>
-              <div class="screenshot-frame"><div class="screenshot-frame__bar screenshot-frame__bar--w35"></div><div class="screenshot-frame__bar screenshot-frame__bar--accent screenshot-frame__bar--w55"></div><div class="screenshot-frame__body"><div class="screenshot-frame__panel screenshot-frame__panel--span2"></div></div></div>
-              <figcaption class="screenshot-frame__caption">CF7 forms list — integrated forms highlighted in green</figcaption>
+              <div class="screenshot-frame"><div class="screenshot-frame__bar screenshot-frame__bar--accent"></div><div class="screenshot-frame__bar screenshot-frame__bar--w70"></div><div class="screenshot-frame__body"><div class="screenshot-frame__panel"></div><div class="screenshot-frame__panel"></div></div></div>
+              <figcaption class="screenshot-frame__caption">Tailwind and Vite dev workflow</figcaption>
             </figure>
             <figure>
-              <div class="screenshot-frame"><div class="screenshot-frame__body screenshot-frame__body--cols3"><div class="screenshot-frame__panel"></div><div class="screenshot-frame__panel"></div><div class="screenshot-frame__panel"></div></div><div class="screenshot-frame__bar screenshot-frame__bar--accent"></div></div>
-              <figcaption class="screenshot-frame__caption">Field mapping — filter by module and map CF7 fields</figcaption>
+              <div class="screenshot-frame"><div class="screenshot-frame__bar screenshot-frame__bar--accent"></div><div class="screenshot-frame__bar screenshot-frame__bar--w70"></div><div class="screenshot-frame__body"><div class="screenshot-frame__panel"></div><div class="screenshot-frame__panel"></div></div></div>
+              <figcaption class="screenshot-frame__caption">Block patterns and template parts</figcaption>
             </figure>
             <figure>
-              <div class="screenshot-frame"><div class="screenshot-frame__bar screenshot-frame__bar--accent screenshot-frame__bar--w30"></div><div class="screenshot-frame__body"><div class="screenshot-frame__panel"></div><div class="screenshot-frame__panel"></div></div></div>
-              <figcaption class="screenshot-frame__caption">API error and notice log when accessing HubSpot</figcaption>
+              <div class="screenshot-frame"><div class="screenshot-frame__bar screenshot-frame__bar--accent"></div><div class="screenshot-frame__bar screenshot-frame__bar--w70"></div><div class="screenshot-frame__body"><div class="screenshot-frame__panel"></div><div class="screenshot-frame__panel"></div></div></div>
+              <figcaption class="screenshot-frame__caption">Production build output</figcaption>
             </figure>
           </div>
         </section>
@@ -299,13 +299,12 @@
         <section id="installation" data-od-id="installation">
           <h2>Installation</h2>
           <ol class="steps-list">
-            <li>Download the plugin from WordPress.org (or ProCoders Market for Pro) and unzip the archive.</li>
-            <li>Upload the <code class="mono">connect-cf7-to-hubspot</code> folder to your <code class="mono">/wp-content/plugins/</code> directory.</li>
-            <li>Activate the plugin through the Plugins menu in WordPress.</li>
-            <li>Navigate to the plugin settings page and follow the on-screen instructions to connect your HubSpot private app token.</li>
+            <li>Clone <a href="https://github.com/SnailTheme/wp-starter" target="_blank" rel="noopener">wp-starter</a> into <code class="mono">/wp-content/themes/wp-starter</code>.</li>
+            <li>Run <code class="mono">npm install</code> and <code class="mono">npm run dev</code> (or <code class="mono">npm run build</code> for production) in the theme directory.</li>
+            <li>Activate the theme under Appearance → Themes.</li>
+            <li>Configure <code class="mono">theme.json</code>, templates, and block patterns to match your project.</li>
           </ol>
-          <h3>WordPress Multisite</h3>
-          <div class="prose"><p>Upload and install via Network Admin → Plugins → Add New. Do not network-activate — activate on a per-site basis for precise control.</p></div>
+          
         </section>
 
         <section id="faq" data-od-id="faq">
@@ -327,13 +326,20 @@
       <aside class="meta-card" aria-label="Plugin metadata">
         <div class="meta-card__title">Plugin info</div>
         <div class="meta-row"><span class="meta-row__label">Author</span><span class="meta-row__value">ProCoders</span></div>
-        <div class="meta-row"><span class="meta-row__label">Source</span><span class="meta-row__value"><a href="https://github.com/SnailTheme/wp-starter" target="_blank" rel="noopener">GitHub</a></span></div>
-        
-        
-        
+        <div class="meta-row"><span class="meta-row__label">Active installs</span><span class="meta-row__value">300+</span></div>
+        <div class="meta-row"><span class="meta-row__label">Tested up to</span><span class="meta-row__value">7.0</span></div>
+        <div class="meta-row"><span class="meta-row__label">PHP</span><span class="meta-row__value">8.0+</span></div>
+        <p class="caption meta-tested-note">Tested up to WordPress 7.0 with PHP 8.0</p>
         <div class="meta-tags">
-          <span class="chip">dev tools</span>
-          <span class="chip">github</span>
+          <span class="chip">forms</span>
+          <span class="chip">wordpress</span>
+        </div>
+        <div class="meta-rating">
+          <div class="meta-rating__head">
+            <div class="meta-rating__score">5.0</div>
+            <span class="stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+          </div>
+          <div class="meta-rating__count">2 ratings</div>
         </div>
         <div class="meta-support"><a href="docs.html">Documentation →</a> · <a href="support.html">Get support →</a></div>
       </aside>
@@ -391,7 +397,7 @@
             <li><a href="docs.html">Documentation</a></li>
             <li><a href="support.html">Support center</a></li>
             <li><a href="docs.html#compatibility">Compatibility</a></li>
-            <li><a href="plugin-wp-starter.html#changelog">Changelog</a></li>
+            <li><a href="plugin-connect-cf7-to-hubspot.html#changelog">Changelog</a></li>
           </ul>
         </div>
         <div class="footer__col">
