@@ -624,12 +624,18 @@
       el.classList.remove('pcm-grid-skeleton', 'pcm-grid-skeleton--pulse', 'pcm-grid-skeleton--carousel');
     }
 
+    function getHeroChipPlugins() {
+      const featured = PLUGINS.filter(p => p.featured);
+      const rest = PLUGINS.filter(p => !p.featured);
+      return featured.concat(rest).slice(0, 6);
+    }
+
     function renderHeroCloud() {
       const chipsEl = document.getElementById('hero-visual-chips');
       if (!chipsEl) return;
-      const featured = PLUGINS.filter(p => p.featured).slice(0, 3);
+      const heroPlugins = getHeroChipPlugins();
       chipsEl.classList.add('is-hydrated');
-      chipsEl.innerHTML = featured.map((p, i) => {
+      chipsEl.innerHTML = heroPlugins.map((p, i) => {
         const layoutClass = `hero-visual__chip--layout-${i}`;
         return `<div class="hero-visual__chip ${heroChipAccent(p.accent)} ${layoutClass}"><span class="hero-visual__chip-icon ${p.bg}">${p.abbr}</span><span class="hero-visual__chip-label">${p.name}</span></div>`;
       }).join('');
