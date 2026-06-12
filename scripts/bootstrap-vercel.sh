@@ -12,11 +12,13 @@ if [[ -z "${VERCEL_TOKEN:-}" ]]; then
   exit 1
 fi
 
-echo "→ Linking Vercel project procoders-market-prototype …"
-npx vercel@latest link --yes --project procoders-market-prototype --token="$VERCEL_TOKEN"
+SCOPE="${VERCEL_SCOPE:-org100hs-projects-c1fd5772}"
+
+echo "→ Linking Vercel project procoders-market-prototype (scope: $SCOPE) …"
+npx vercel@latest link --yes --project procoders-market-prototype --scope "$SCOPE" --token="$VERCEL_TOKEN"
 
 echo "→ Initial production deploy …"
-npx vercel@latest deploy --prod --yes --token="$VERCEL_TOKEN"
+npx vercel@latest deploy --prod --yes --scope "$SCOPE" --token="$VERCEL_TOKEN"
 
 if [[ ! -f .vercel/project.json ]]; then
   echo "Missing .vercel/project.json after link"
