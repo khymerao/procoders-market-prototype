@@ -330,7 +330,7 @@
             "installs": null,
             "rating": null,
             "reviews": null,
-            "featured": false,
+            "featured": true,
             "isNew": false,
             "excerpt": "Welcome to the Advanced Custom Fields SVG Icon repository on Github. First ideas of this plugin come from BeAPI/acf-svg-icon but they were reorganised and enhanced by my mind :yum:",
             "description": "Welcome to the Advanced Custom Fields SVG Icon repository on Github. First ideas of this plugin come from BeAPI/acf-svg-icon but they were reorganised and enhanced by my mind :yum:",
