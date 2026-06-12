@@ -1,0 +1,384 @@
+{
+    "version": 1,
+    "updatedAt": "2026-06-12T13:19:03+00:00",
+    "products": [
+        {
+            "slug": "connect-cf7-to-hubspot",
+            "name": "Connect CF7 to HubSpot",
+            "abbr": "CF7",
+            "source": "wordpress.org",
+            "sourceUrl": "https://wordpress.org/plugins/connect-cf7-to-hubspot/",
+            "githubUrl": null,
+            "category": "Forms",
+            "price": {
+                "pro": 49,
+                "currency": "USD",
+                "free": true
+            },
+            "installs": "300+",
+            "rating": 5,
+            "reviews": 2,
+            "featured": true,
+            "isNew": false,
+            "excerpt": "Seamlessly Connect CF7 to HubSpot to automate your lead management process.",
+            "description": "Connect CF7 to HubSpot by ProCoders is a powerful plugin that connects WordPress Contact Form 7 directly with your HubSpot account, automating your workflow and enhancing lead management. With this plugin, every submission from Contact Form 7 is instantly and securely synced with HubSpot, allowing you to manage contacts, track submissions, and engage with your audience without manual data entry. Third-Party Service Integration: This plugin integrates with HubSpot, a third-party service, to manage and sync data from Contact Form 7 submissions. By using this plugin, data collected through Contact Form 7 will be sent to HubSpot for processing and storage. Please be aware that by using this plugin, you agree to the terms of service and privacy policy of HubSpot. This plugin interacts with the HubSpot service and sends data to it. Specifically, our plugin sends requests to the following URLs: &#8211; https://api.hubapi.com &#8211; https://api.hsforms.com Please read HubSpot&#8217;s Privacy Policy carefully to understand what data is collected and how it is used. HubSpot&#8217;s Privacy Policy: https://legal.hubspot.com/privacy-policy HubSpot Terms of Service: View Terms &#8211; https://legal.hubspot.com/terms-of-service Features include: &#8211; Easy integration with HubSpot’s Lead Capture Forms, Contacts, and Deals. &#8211; Automated syncing of Contact Form 7 submissions to HubSpot. &#8211; Support for custom fields in HubSpot, allowing for detailed data capture. &#8211; Intuitive mapping of form fields to HubSpot properties. &#8211; Utilization of the latest HubSpot API for enhanced security and reliability. &#8211; Asynchronous HubSpot submissionsConnect CF7 to HubSpot by ProCoders is a powerful plugin that connects WordPress Contact Form 7 directly with your HubSpot account, automating your workflow and enhancing lead management. With this plugin, every submission from Contact Form 7 is instantly and securely synced with HubSpot, allowing you to manage contacts, track submissions, and engage with your audience without manual data entry. Third-Party Service Integration: This plugin integrates with HubSpot, a third-party service, to manage and sync data from Contact Form 7 submissions. By using this plugin, data collected through Contact Form 7 will be sent to HubSpot for processing and storage. Please be aware that by using this plugin, you agree to the terms of service and privacy policy of HubSpot. Specifically, our plugin sends requests to the following URLs: &#8211; https://api.hubapi.com &#8211; https://api.hsforms.com &#8211; HubSpot&#8217;s Privacy Policy: https://legal.hubspot.com/privacy-policy &#8211; HubSpot Terms of Service: View Terms &#8211; https://legal.hubspot.com/terms-of-service Features include: &#8211; Easy integration with HubSpot’s Lead Capture Forms, Contacts, and Deals. &#8211; Automated syncing of Contact Form 7 submissions to HubSpot. &#8211; Support for custom fields in HubSpot, allowing for detailed data capture. &#8211; Intuitive mapping of form fields to HubSpot properties. &#8211; Utilization of the latest HubSpot API for enhanced security and reliability. Asynchronous HubSpot submissions (optional, since 1.3) Want forms to feel instant for visitors while HubSpot catches up behind the scenes? Turn on async mode in the plugin settings. The visitor’s submission is accepted by Contact Form 7 without waiting on HubSpot network round-trips; syncing runs as a background job so thank-you pages and redirects stay snappy even when APIs are slow or busy. The queue uses Action Scheduler when it is available on your site (for example alongside WooCommerce), which is built for reliable background work. If Action Scheduler is not present, the plugin falls back to WordPress cron with a sensible delay. Failed jobs are retried automatically with exponential backoff (up to three attempts), reducing the chance of losing a lead to a temporary outage or rate limit. Contacts, deals, HubSpot forms, and file attachments are supported in async mode the same way as synchronous processing—attachments are staged safely for the worker.",
+            "testedUpTo": "7.0",
+            "requiresPhp": "8.0",
+            "assets": {
+                "icon128": "assets/plugins/connect-cf7-to-hubspot/icon-128x128.png",
+                "icon256": "assets/plugins/connect-cf7-to-hubspot/icon-256x256.png",
+                "hero": "assets/plugins/connect-cf7-to-hubspot/hero-1280x720.webp",
+                "og": "assets/plugins/connect-cf7-to-hubspot/og-1200x630.webp",
+                "card": "assets/plugins/connect-cf7-to-hubspot/card-512x512.webp",
+                "banner772": "assets/plugins/connect-cf7-to-hubspot/banner-772x250.jpg",
+                "banner1544": "assets/plugins/connect-cf7-to-hubspot/banner-1544x500.jpg"
+            },
+            "visualMetaphor": "Form node → HubSpot CRM node",
+            "wporgIcons": {
+                "1x": "https://ps.w.org/connect-cf7-to-hubspot/assets/icon.svg?rev=3084596",
+                "svg": "https://ps.w.org/connect-cf7-to-hubspot/assets/icon.svg?rev=3084596"
+            },
+            "wporgBanners": {
+                "low": "https://ps.w.org/connect-cf7-to-hubspot/assets/banner-772x250.jpg?rev=3084603",
+                "high": "https://ps.w.org/connect-cf7-to-hubspot/assets/banner-1544x500.jpg?rev=3084603"
+            }
+        },
+        {
+            "slug": "connect-cf7-to-pipedrive",
+            "name": "Connect Contact Form 7 to PipeDrive",
+            "abbr": "PD",
+            "source": "wordpress.org",
+            "sourceUrl": "https://wordpress.org/plugins/connect-cf7-to-pipedrive/",
+            "githubUrl": null,
+            "category": "Forms",
+            "price": {
+                "pro": null,
+                "currency": "USD",
+                "free": true
+            },
+            "installs": "90+",
+            "rating": 5,
+            "reviews": 1,
+            "featured": true,
+            "isNew": false,
+            "excerpt": "Seamlessly integrate Contact Form 7 with PipeDrive to automate your lead management process.",
+            "description": "Connect Contact Form 7 seamlessly with PipeDrive using the PipeDrive &amp; Contact Form 7 Integration plugin by ProCoders. This powerful tool automates lead management, ensuring every form submission is efficiently synced with your PipeDrive account. With secure and instant data transfer, you can effortlessly manage contacts, track submissions, and engage with your audience. Third-Party Service Integration: This plugin integrates with Pipedrive, a third-party service, to manage and sync data from Contact Form 7 submissions. By using this plugin, data collected through Contact Form 7 will be sent to Pipedrive for processing and storage. Please be aware that by using this plugin, you agree to the terms of service and privacy policy of Pipedrive. Specifically, our plugin sends requests to the following URLs: https://api.pipedrive.com Please read Pipedrive&#8217;s Privacy Policy carefully to understand what data is collected and how it is used. Pipedrive&#8217;s Privacy Policy: https://www.pipedrive.com/en/privacy Pipedrive Terms of Service: https://www.pipedrive.com/en/terms-of-service Features include: &#8211; Effortless Integration: Connect Contact Form 7 with PipeDrive Leads, Persons, and Organizations effortlessly. &#8211; Automated Syncing: Enjoy automated syncing of Contact Form 7 submissions directly to your PipeDrive account. &#8211; Intuitive Mapping: Easily map form fields to PipeDrive properties for streamlined data management. &#8211; Secure Communication: Utilize the latest PipeDrive API for secure and reliable data transfer, keeping your information up to date and protected.",
+            "testedUpTo": "6.8.5",
+            "requiresPhp": "8.0",
+            "assets": {
+                "icon128": "assets/plugins/connect-cf7-to-pipedrive/icon-128x128.png",
+                "icon256": "assets/plugins/connect-cf7-to-pipedrive/icon-256x256.png",
+                "hero": "assets/plugins/connect-cf7-to-pipedrive/hero-1280x720.webp",
+                "og": "assets/plugins/connect-cf7-to-pipedrive/og-1200x630.webp",
+                "card": "assets/plugins/connect-cf7-to-pipedrive/card-512x512.webp",
+                "banner772": "assets/plugins/connect-cf7-to-pipedrive/banner-772x250.jpg",
+                "banner1544": "assets/plugins/connect-cf7-to-pipedrive/banner-1544x500.jpg"
+            },
+            "visualMetaphor": "Form → 3 pipeline stage blocks",
+            "wporgIcons": {
+                "1x": "https://ps.w.org/connect-cf7-to-pipedrive/assets/icon.svg?rev=3099428",
+                "svg": "https://ps.w.org/connect-cf7-to-pipedrive/assets/icon.svg?rev=3099428"
+            },
+            "wporgBanners": {
+                "low": "https://ps.w.org/connect-cf7-to-pipedrive/assets/banner-772x250.jpg?rev=3099523",
+                "high": "https://ps.w.org/connect-cf7-to-pipedrive/assets/banner-1544x500.jpg?rev=3099452"
+            }
+        },
+        {
+            "slug": "connect-cf7-to-salesforce",
+            "name": "Connect Contact Form 7 to Salesforce",
+            "abbr": "SF",
+            "source": "wordpress.org",
+            "sourceUrl": "https://wordpress.org/plugins/connect-cf7-to-salesforce/",
+            "githubUrl": null,
+            "category": "Forms",
+            "price": {
+                "pro": null,
+                "currency": "USD",
+                "free": true
+            },
+            "installs": "10+",
+            "rating": 0,
+            "reviews": 0,
+            "featured": false,
+            "isNew": false,
+            "excerpt": "Seamlessly integrate Contact Form 7 with Salesforce to automate your lead management process.",
+            "description": "Connect Contact Form 7 seamlessly with Salesforce using the Salesforce &amp; Contact Form 7 Integration plugin by ProCoders. This powerful tool automates lead management, ensuring every form submission is efficiently synced with your Salesforce account. With secure and instant data transfer, you can effortlessly manage your leads. Third-Party Service Integration: This plugin integrates with Salesforce, a third-party service, to manage and sync data from Contact Form 7 submissions. By using this plugin, data collected through Contact Form 7 will be sent to Salesforce for processing and storage. Please be aware that by using this plugin, you agree to the terms of service and privacy policy of Salesforce. Specifically, our plugin sends requests to the following URLs: *** REST API Endpoint *** &#8211; Production: https://yourInstance.salesforce.com/services/data/v51.0/ &#8211; Sandbox: https://test.salesforce.com/services/data/v51.0/ *** OAuth 2.0 Token Endpoint *** &#8211; Production: https://login.salesforce.com/services/oauth2/token &#8211; Sandbox: https://test.salesforce.com/services/oauth2/token Please read Salesforce Privacy Policy carefully to understand what data is collected and how it is used. Salesforce Privacy Policy: https://www.salesforce.com/company/legal/privacy/ Salesforce Terms of Service: https://www.salesforce.com/company/legal/sfdc-website-terms-of-service/ Features include: &#8211; Effortless Integration: Connect Contact Form 7 with Salesforce Leads. &#8211; Automated Syncing: Enjoy automated syncing of Contact Form 7 submissions directly to your Salesforce account. &#8211; Intuitive Mapping: Easily map form fields to Salesforce properties for streamlined data management. &#8211; Secure Communication: Utilize the latest Salesforce API for secure and reliable data transfer, keeping your information up to date and protected.",
+            "testedUpTo": "6.6.5",
+            "requiresPhp": "8.0",
+            "assets": {
+                "icon128": "assets/plugins/connect-cf7-to-salesforce/icon-128x128.png",
+                "icon256": "assets/plugins/connect-cf7-to-salesforce/icon-256x256.png",
+                "hero": "assets/plugins/connect-cf7-to-salesforce/hero-1280x720.webp",
+                "og": "assets/plugins/connect-cf7-to-salesforce/og-1200x630.webp",
+                "card": "assets/plugins/connect-cf7-to-salesforce/card-512x512.webp",
+                "banner772": "assets/plugins/connect-cf7-to-salesforce/banner-772x250.jpg",
+                "banner1544": "assets/plugins/connect-cf7-to-salesforce/banner-1544x500.jpg"
+            },
+            "visualMetaphor": "Form → cloud + record rows",
+            "wporgIcons": {
+                "1x": "https://ps.w.org/connect-cf7-to-salesforce/assets/icon-128x128.png?rev=3157943",
+                "2x": "https://ps.w.org/connect-cf7-to-salesforce/assets/icon-256x256.png?rev=3157943"
+            },
+            "wporgBanners": {
+                "low": "https://ps.w.org/connect-cf7-to-salesforce/assets/banner-772x250.jpg?rev=3157943",
+                "high": "https://ps.w.org/connect-cf7-to-salesforce/assets/banner-1544x500.jpg?rev=3157943"
+            }
+        },
+        {
+            "slug": "connect-cf7-to-zoho",
+            "name": "Connect Contact Form 7 to Zoho",
+            "abbr": "ZO",
+            "source": "wordpress.org",
+            "sourceUrl": "https://wordpress.org/plugins/connect-cf7-to-zoho/",
+            "githubUrl": null,
+            "category": "Forms",
+            "price": {
+                "pro": null,
+                "currency": "USD",
+                "free": true
+            },
+            "installs": "<10",
+            "rating": 5,
+            "reviews": 1,
+            "featured": false,
+            "isNew": false,
+            "excerpt": "Seamlessly integrate Contact Form 7 with Zoho to automate your lead management process.",
+            "description": "Connect Contact Form 7 seamlessly with Zoho using the Zoho &amp; Contact Form 7 Integration plugin by ProCoders. This powerful tool automates lead management, ensuring every form submission is efficiently synced with your Zoho account. With secure and instant data transfer, you can effortlessly manage contacts, track submissions, and engage with your audience. Third-Party Service Integration: This plugin integrates with Zoho, a third-party service, to manage and sync data from Contact Form 7 submissions. By using this plugin, data collected through Contact Form 7 will be sent to Zoho for processing and storage. Please be aware that by using this plugin, you agree to the terms of service and privacy policy of Zoho. Specifically, our plugin sends requests to the following URLs: https://zylkercorp.zohoplatform.com https://www.zohoapis.eu Please read Zoho&#8217;s Privacy Policy carefully to understand what data is collected and how it is used. Zoho&#8217;s Privacy Policy: https://www.zoho.com/privacy.html Zoho Terms of Service: https://www.zoho.com/terms.html Features include: &#8211; Effortless Integration: Connect Contact Form 7 with Zoho Leads effortlessly. &#8211; Automated Syncing: Enjoy automated syncing of Contact Form 7 submissions directly to your Zoho account. &#8211; Intuitive Mapping: Easily map form fields to Zoho properties for streamlined data management. &#8211; Secure Communication: Utilize the latest Zoho API for secure and reliable data transfer, keeping your information up to date and protected.",
+            "testedUpTo": "6.8.5",
+            "requiresPhp": "8.0",
+            "assets": {
+                "icon128": "assets/plugins/connect-cf7-to-zoho/icon-128x128.png",
+                "icon256": "assets/plugins/connect-cf7-to-zoho/icon-256x256.png",
+                "hero": "assets/plugins/connect-cf7-to-zoho/hero-1280x720.webp",
+                "og": "assets/plugins/connect-cf7-to-zoho/og-1200x630.webp",
+                "card": "assets/plugins/connect-cf7-to-zoho/card-512x512.webp",
+                "banner772": "assets/plugins/connect-cf7-to-zoho/banner-772x250.jpg",
+                "banner1544": "assets/plugins/connect-cf7-to-zoho/banner-1544x500.jpg"
+            },
+            "visualMetaphor": "Form → Z-route → inbox",
+            "wporgIcons": {
+                "1x": "https://ps.w.org/connect-cf7-to-zoho/assets/icon.svg?rev=3298850",
+                "svg": "https://ps.w.org/connect-cf7-to-zoho/assets/icon.svg?rev=3298850"
+            },
+            "wporgBanners": {
+                "low": "https://ps.w.org/connect-cf7-to-zoho/assets/banner-772x250.jpg?rev=3298850",
+                "high": "https://ps.w.org/connect-cf7-to-zoho/assets/banner-1544x500.jpg?rev=3298850"
+            }
+        },
+        {
+            "slug": "brainy-search",
+            "name": "BrainySearch",
+            "abbr": "BS",
+            "source": "wordpress.org",
+            "sourceUrl": "https://wordpress.org/plugins/brainy-search/",
+            "githubUrl": null,
+            "category": "AI",
+            "price": {
+                "pro": null,
+                "currency": "USD",
+                "free": true
+            },
+            "installs": "<10",
+            "rating": 0,
+            "reviews": 0,
+            "featured": false,
+            "isNew": false,
+            "excerpt": "The BrainySearch plugin allows you to perform advanced search queries on your WordPress site using the OpenAI API.",
+            "description": "This WordPress plugin indexes your blog posts using the embeddings feature of OpenAI, and uses this data to enrich the BrainySearch request. When a user searches for content using the [brainy_search] shortcode, the plugin returns the most relevant search results based on the content of the indexed blog posts, along with a temperature label (0-100) that indicates the &#8220;creativity&#8221; or &#8220;diversity&#8221; of the results. The BrainySearch plugin can be used on any WordPress site where advanced search functionality is desired. Some potential use cases include: E-commerce sites looking to provide more accurate and relevant product search results to customers News or blog sites looking to provide more targeted search results based on article content Educational sites or online course providers looking to provide more effective search results for course content Knowledge base sites looking to improve the search experience for users trying to find specific information Expert systems or decision-making systems that require fast and accurate search functionality to deliver results to users",
+            "testedUpTo": "6.1.10",
+            "requiresPhp": "7.0",
+            "assets": {
+                "icon128": "assets/plugins/brainy-search/icon-128x128.png",
+                "icon256": "assets/plugins/brainy-search/icon-256x256.png",
+                "hero": "assets/plugins/brainy-search/hero-1280x720.webp",
+                "og": "assets/plugins/brainy-search/og-1200x630.webp",
+                "card": "assets/plugins/brainy-search/card-512x512.webp",
+                "banner772": "assets/plugins/brainy-search/banner-772x250.jpg",
+                "banner1544": "assets/plugins/brainy-search/banner-1544x500.jpg"
+            },
+            "visualMetaphor": "Magnifier + 3-node graph",
+            "wporgIcons": {
+                "1x": "https://ps.w.org/brainy-search/assets/icon-256x256.png?rev=2885190",
+                "2x": "https://ps.w.org/brainy-search/assets/icon-256x256.png?rev=2885190"
+            },
+            "wporgBanners": {
+                "low": "https://ps.w.org/brainy-search/assets/banner-772x250.png?rev=2885190",
+                "high": "https://ps.w.org/brainy-search/assets/banner-1544x500.png?rev=2885190"
+            }
+        },
+        {
+            "slug": "omnimind",
+            "name": "OmniMind Integration",
+            "abbr": "OM",
+            "source": "wordpress.org",
+            "sourceUrl": "https://wordpress.org/plugins/omnimind/",
+            "githubUrl": null,
+            "category": "AI",
+            "price": {
+                "pro": null,
+                "currency": "USD",
+                "free": true
+            },
+            "installs": "<10",
+            "rating": 0,
+            "reviews": 0,
+            "featured": false,
+            "isNew": false,
+            "excerpt": "Seamlessly connect your website with OmniMind to automate your content management and search processes.",
+            "description": "OmniMind WordPress Integration by ProCoders is a robust plugin that connects your WordPress site directly with your OmniMind account, automating your workflow and enhancing content management. With this plugin, every post, page, and custom post on your WordPress site can instantly and securely sync with OmniMind, allowing you to manage and search your content more efficiently. Third-Party Service Integration: This plugin integrates with OmniMind, a third-party service (https://app-api.omnimind.ai), to manage and sync data from your WordPress site. By using this plugin, content collected from your WordPress site will be sent to OmniMind for processing and storage. Please be aware that by using this plugin, you agree to the terms of service and privacy policy of OmniMind. OmniMind&#8217;s Privacy Policy: https://omnimind.ai/privacy-policy/ OmniMind Terms of Service: https://omnimind.ai/terms-of-service/ Features include: &#8211; Easy integration with OmniMind&#8217;s content management and search. &#8211; Automated syncing of WordPress site content to OmniMind. &#8211; Support for custom post types, allowing for detailed data capture. &#8211; Integration of the omni_search shortcode to enable search requests within OmniMind.",
+            "testedUpTo": "6.6.5",
+            "requiresPhp": "7.3",
+            "assets": {
+                "icon128": "assets/plugins/omnimind/icon-128x128.png",
+                "icon256": "assets/plugins/omnimind/icon-256x256.png",
+                "hero": "assets/plugins/omnimind/hero-1280x720.webp",
+                "og": "assets/plugins/omnimind/og-1200x630.webp",
+                "card": "assets/plugins/omnimind/card-512x512.webp",
+                "banner772": "assets/plugins/omnimind/banner-772x250.jpg",
+                "banner1544": "assets/plugins/omnimind/banner-1544x500.jpg"
+            },
+            "visualMetaphor": "WP block → API wire → node",
+            "wporgIcons": {
+                "1x": "https://ps.w.org/omnimind/assets/icon.svg?rev=3139813",
+                "svg": "https://ps.w.org/omnimind/assets/icon.svg?rev=3139813"
+            },
+            "wporgBanners": {
+                "low": "https://ps.w.org/omnimind/assets/banner-772x250.jpg?rev=3139813",
+                "high": "https://ps.w.org/omnimind/assets/banner-1544x500.jpg?rev=3139813"
+            }
+        },
+        {
+            "slug": "singular-markdown",
+            "name": "Singular Markdown",
+            "abbr": "MD",
+            "source": "github",
+            "sourceUrl": "https://github.com/shoot56/singular-markdown",
+            "githubUrl": "https://github.com/shoot56/singular-markdown",
+            "category": "SEO",
+            "price": {
+                "pro": null,
+                "currency": "USD",
+                "free": true
+            },
+            "installs": null,
+            "rating": null,
+            "reviews": null,
+            "featured": true,
+            "isNew": false,
+            "excerpt": "WordPress plugin (theme-agnostic) that: - Caches a Markdown representation of each eligible singular URL under wp-content/uploads/singular-markdown-cache/. - Serves it at the same path as the HTML permalink with .md appended (rewrite rules), for example /about/ → /about.md.",
+            "description": "WordPress plugin (theme-agnostic) that: - Caches a Markdown representation of each eligible singular URL under wp-content/uploads/singular-markdown-cache/. - Serves it at the same path as the HTML permalink with .md appended (rewrite rules), for example /about/ → /about.md.",
+            "testedUpTo": null,
+            "requiresPhp": null,
+            "assets": {
+                "icon128": "assets/plugins/singular-markdown/icon-128x128.png",
+                "icon256": "assets/plugins/singular-markdown/icon-256x256.png",
+                "hero": "assets/plugins/singular-markdown/hero-1280x720.webp",
+                "og": "assets/plugins/singular-markdown/og-1200x630.webp",
+                "card": "assets/plugins/singular-markdown/card-512x512.webp"
+            },
+            "visualMetaphor": "/page box → /page.md box",
+            "wporgIcons": [],
+            "wporgBanners": []
+        },
+        {
+            "slug": "plugin-procoders-gutenberg-blocks",
+            "name": "Procoders Blocks",
+            "abbr": "PB",
+            "source": "github",
+            "sourceUrl": "https://github.com/shoot56/plugin-procoders-gutenberg-blocks",
+            "githubUrl": "https://github.com/shoot56/plugin-procoders-gutenberg-blocks",
+            "category": "Dev Tools",
+            "price": {
+                "pro": null,
+                "currency": "USD",
+                "free": true
+            },
+            "installs": null,
+            "rating": null,
+            "reviews": null,
+            "featured": false,
+            "isNew": false,
+            "excerpt": "=== Procoders Blocks === Contributors: Procoders Tags: Gutenberg, Blocks, Gutenberg Blocks, Plugin",
+            "description": "=== Procoders Blocks === Contributors: Procoders Tags: Gutenberg, Blocks, Gutenberg Blocks, Plugin",
+            "testedUpTo": null,
+            "requiresPhp": null,
+            "assets": {
+                "icon128": "assets/plugins/plugin-procoders-gutenberg-blocks/icon-128x128.png",
+                "icon256": "assets/plugins/plugin-procoders-gutenberg-blocks/icon-256x256.png",
+                "hero": "assets/plugins/plugin-procoders-gutenberg-blocks/hero-1280x720.webp",
+                "og": "assets/plugins/plugin-procoders-gutenberg-blocks/og-1200x630.webp",
+                "card": "assets/plugins/plugin-procoders-gutenberg-blocks/card-512x512.webp"
+            },
+            "visualMetaphor": "Gutenberg grid + custom block",
+            "wporgIcons": [],
+            "wporgBanners": []
+        },
+        {
+            "slug": "acf-svg-icon",
+            "name": "ACF SVG Icon",
+            "abbr": "SVG",
+            "source": "github",
+            "sourceUrl": "https://github.com/shoot56/acf-svg-icon",
+            "githubUrl": "https://github.com/shoot56/acf-svg-icon",
+            "category": "Dev Tools",
+            "price": {
+                "pro": null,
+                "currency": "USD",
+                "free": true
+            },
+            "installs": null,
+            "rating": null,
+            "reviews": null,
+            "featured": false,
+            "isNew": false,
+            "excerpt": "Welcome to the Advanced Custom Fields SVG Icon repository on Github. First ideas of this plugin come from BeAPI/acf-svg-icon but they were reorganised and enhanced by my mind :yum:",
+            "description": "Welcome to the Advanced Custom Fields SVG Icon repository on Github. First ideas of this plugin come from BeAPI/acf-svg-icon but they were reorganised and enhanced by my mind :yum:",
+            "testedUpTo": null,
+            "requiresPhp": null,
+            "assets": {
+                "icon128": "assets/plugins/acf-svg-icon/icon-128x128.png",
+                "icon256": "assets/plugins/acf-svg-icon/icon-256x256.png",
+                "hero": "assets/plugins/acf-svg-icon/hero-1280x720.webp",
+                "og": "assets/plugins/acf-svg-icon/og-1200x630.webp",
+                "card": "assets/plugins/acf-svg-icon/card-512x512.webp"
+            },
+            "visualMetaphor": "SVG sprite + picker grid",
+            "wporgIcons": [],
+            "wporgBanners": []
+        },
+        {
+            "slug": "wp-starter",
+            "name": "WP Starter",
+            "abbr": "WS",
+            "source": "github",
+            "sourceUrl": "https://github.com/SnailTheme/wp-starter",
+            "githubUrl": "https://github.com/SnailTheme/wp-starter",
+            "category": "Dev Tools",
+            "price": {
+                "pro": null,
+                "currency": "USD",
+                "free": true
+            },
+            "installs": null,
+            "rating": null,
+            "reviews": null,
+            "featured": false,
+            "isNew": false,
+            "excerpt": "st-wp-starter === Hi. I'm a starter theme called st-wp-starter. I'm here to be turned into a",
+            "description": "st-wp-starter === Hi. I'm a starter theme called st-wp-starter. I'm here to be turned into a",
+            "testedUpTo": null,
+            "requiresPhp": null,
+            "assets": {
+                "icon128": "assets/plugins/wp-starter/icon-128x128.png",
+                "icon256": "assets/plugins/wp-starter/icon-256x256.png",
+                "hero": "assets/plugins/wp-starter/hero-1280x720.webp",
+                "og": "assets/plugins/wp-starter/og-1200x630.webp",
+                "card": "assets/plugins/wp-starter/card-512x512.webp"
+            },
+            "visualMetaphor": "Folder tree /core /inc /assets",
+            "wporgIcons": [],
+            "wporgBanners": []
+        }
+    ]
+}
